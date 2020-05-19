@@ -2,8 +2,12 @@ body {
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
   line-height: 21px;
-font-size: 13px;
+  font-size: 13px;
   color: #6a737b;
+
+  > section{
+    padding: 70px 0;
+  }
 }
 
 ol, ul {
