@@ -1,0 +1,25 @@
+#feature{
+    background-color: #f4f7f9;
+
+    .service-item{
+        .service-icon{
+            border: 1px solid #0eb493;
+            border-radius: 50%;
+            color: #0eb493;
+            float: left;
+            padding: 10px 13px;
+        }
+
+        .service-desc{
+            margin-left: 70px;
+            position: relative;
+            top: 5px;
+            h3{
+                color: #062033;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

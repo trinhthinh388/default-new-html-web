@@ -7510,6 +7510,51 @@ span.color {
   color: #0feb9e;
 }
 
+.devider {
+  margin-top: 30px;
+}
+
+.devider i {
+  color: #cccccc;
+}
+
+.devider::before, .devider::after {
+  content: "______________________";
+  color: #e6e8ea;
+  position: relative;
+  bottom: 6px;
+}
+
+.devider::before {
+  right: 10px;
+}
+
+.devider::after {
+  left: 10px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.sec-title h2 {
+  color: #0eb493;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.sec-sub-title {
+  margin: 35px 0 45px;
+}
+
+.sec-sub-title p {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 18px;
+  color: #5b646e;
+}
+
 header {
   background-color: rgba(16, 22, 54, 0.2);
   border: 0 none;
@@ -7621,6 +7666,31 @@ header .container .navbar-nav li a:hover, header .container .navbar-nav li a:foc
 
 #slider .carousel-inner .item .carousel-caption .social-links a:hover {
   color: #ffffff;
+}
+
+#feature {
+  background-color: #f4f7f9;
+}
+
+#feature .service-item .service-icon {
+  border: 1px solid #0eb493;
+  border-radius: 50%;
+  color: #0eb493;
+  float: left;
+  padding: 10px 13px;
+}
+
+#feature .service-item .service-desc {
+  margin-left: 70px;
+  position: relative;
+  top: 5px;
+}
+
+#feature .service-item .service-desc h3 {
+  color: #062033;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
 }
 
 .current {

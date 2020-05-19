@@ -51,3 +51,49 @@ margin: 0;
 span.color {
 	color: #0feb9e;
 }
+
+.devider{
+  margin-top: 30px;
+
+  i{
+    color: #cccccc;
+  }
+
+  &::before, &::after{
+    content: "______________________";
+    color: #e6e8ea;
+    position: relative;
+    bottom: 6px;
+  }
+
+  &::before{
+    right: 10px;
+  }
+
+  &::after{
+    left: 10px;
+  }
+}
+
+.mb50{
+  margin-bottom: 50px;
+}
+
+.sec-title{
+  h2{
+    color: #0eb493;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+}
+
+.sec-sub-title {
+  margin: 35px 0 45px;
+  p{
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 18px;
+    color: #5b646e;
+  }
+}
