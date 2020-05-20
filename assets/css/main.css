@@ -7459,11 +7459,20 @@ html, body {
   }
 }
 
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("../fonts/Montserrat-ExtraBold.svg#aller") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
   line-height: 21px;
   font-size: 13px;
+  font-size: 0.8125rem;
   color: #6a737b;
 }
 
@@ -7539,9 +7548,11 @@ span.color {
 
 .sec-title h2 {
   color: #0eb493;
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 38px;
+  font-size: 2.375rem;
+  font-weight: 900;
   text-transform: uppercase;
+  font-family: 'Montserrat-ExtraBold', sans-serif;
 }
 
 .sec-sub-title {
@@ -7553,6 +7564,14 @@ span.color {
   line-height: 24px;
   font-size: 18px;
   color: #5b646e;
+}
+
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url("../fonts/Pacifico.eot");
+  src: url("../fonts/Pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/Pacifico.woff") format("woff"), url("../fonts/Pacifico.ttf") format("truetype"), url("../fonts/Pacifico.svg#aller") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 header {
@@ -7569,6 +7588,32 @@ header .container .navbar-header {
 
 header .container .navbar-brand {
   padding: 0;
+  margin-left: 10px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .navbar-brand h1 {
+  font-family: 'Pacifico-Regular' ,Arial, sans-serif;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+header .container .navbar-brand i {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0 20px;
+  margin-left: 20px;
+  line-height: 15px;
+  color: rgba(245, 245, 245, 0.2);
+  border-left: 1px solid rgba(13, 143, 97, 0.3);
 }
 
 header .container .navbar-nav li a {
@@ -7579,6 +7624,14 @@ header .container .navbar-nav li a:hover, header .container .navbar-nav li a:foc
   background-color: transparent;
   border-top: 1px solid #32B0EE;
   color: #fff;
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("../fonts/Montserrat-ExtraBold.svg#aller") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 #slider {
@@ -7607,24 +7660,41 @@ header .container .navbar-nav li a:hover, header .container .navbar-nav li a:foc
 
 #slider .carousel-inner .item {
   background-size: cover;
-  height: 100vh;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #slider .carousel-inner .item .carousel-caption {
-  top: 50%;
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 10rem;
 }
 
 #slider .carousel-inner .item .carousel-caption h2 {
   font-size: 62px;
+  font-size: 3.875rem;
   font-weight: 300;
 }
 
 #slider .carousel-inner .item .carousel-caption h2 span {
+  font-family: 'Montserrat-ExtraBold', sans-serif;
   font-weight: 800;
 }
 
 #slider .carousel-inner .item .carousel-caption h3 {
   font-size: 48px;
+  font-size: 3rem;
   font-weight: 300;
   margin: 6px 0 20px;
 }
@@ -7632,6 +7702,7 @@ header .container .navbar-nav li a:hover, header .container .navbar-nav li a:foc
 #slider .carousel-inner .item .carousel-caption p {
   color: #ffffff;
   font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
 }
 
@@ -7689,8 +7760,123 @@ header .container .navbar-nav li a:hover, header .container .navbar-nav li a:foc
 #feature .service-item .service-desc h3 {
   color: #062033;
   font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 25px;
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("../fonts/Montserrat-ExtraBold.svg#aller") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#work .container .filter-btn {
+  text-align: center;
+}
+
+#work .container .row p {
+  font-weight: 600;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding-top: 2rem;
+}
+
+#work .container .row a {
+  font-family: 'Montserrat-ExtraBold', sans-serif;
+  background-color: transparent;
+  border-color: transparent;
+  color: #000000;
+}
+
+#work .container .row a:hover {
+  color: #fff;
+  background-color: #0eb493;
+}
+
+#work .container .row a:focus {
+  color: #fff;
+  background-color: #0eb493;
+}
+
+#work .container-fluid .photo {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+#work .container-fluid .photo img {
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 35rem) and (max-width: 40rem) {
+  #work .container-fluid .photo {
+    width: 50%;
+  }
+}
+
+@media (min-width: 40rem) and (max-width: 63rem) {
+  #work .container-fluid .photo {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 60rem) {
+  #work .container-fluid .photo {
+    width: 25%;
+  }
+}
+
+#work .container-fluid .photo figcaption {
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background-color: #0eb493;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+          transform: rotateY(180deg) scale(0.5, 0.5);
+  color: #fff;
+}
+
+#work .container-fluid .photo figcaption a {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin-top: 20%;
+  display: inline-block;
+  padding: .45rem .625rem;
+}
+
+#work .container-fluid .photo figcaption a i {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+#work .container-fluid .photo figcaption a:hover {
+  color: #fff;
+}
+
+#work .container-fluid .photo figcaption h4 {
+  font-family: 'Montserrat-ExtraBold', sans-serif;
+  padding: 10px 0px;
+}
+
+#work .container-fluid .photo figcaption p {
+  font-family: 'Montserrat-ExtraBold', sans-serif;
+}
+
+#work .container-fluid .photo:hover figcaption {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+          transform: rotateY(0deg) scale(1, 1);
 }
 
 .current {

@@ -1,3 +1,5 @@
+@include font('Pacifico-Regular', '../fonts/Pacifico');
+
 header{
   background-color: rgba(16, 22, 54, 0.2);
   border: 0 none;
@@ -17,6 +19,24 @@ header{
   
     .navbar-brand{
       padding: 0;
+      margin-left: 10px;
+      @include flex();
+      align-items: center;
+      h1{
+        font-family: 'Pacifico-Regular' ,Arial, sans-serif;
+        @include font-size(32px);
+      }
+      i{
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        @include font-size(12px);
+        font-weight: 600;
+        padding: 0 20px;
+        margin-left: 20px;
+        line-height: 15px;
+        color: rgba($color: #f5f5f5, $alpha: 0.2);
+        border-left: 1px solid rgba(13, 143, 97, 0.3);
+      }
     }
     .navbar-nav{
       li{

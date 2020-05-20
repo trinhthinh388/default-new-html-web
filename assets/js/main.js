@@ -28,24 +28,41 @@ $(document).ready(function(){
     });
     //END
 
-    //Set the height of slider **IDK why brandi use this????**
-    // let sliderHeight = $(window).height();
-    // $('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css("height", sliderHeight);
-    // $(window).resize(function(){
-    //     'use strict',
-    //     $('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css("height", sliderHeight);
-    // });
-    //END
-
-
-    //WOW animation
-    let wow = new WOW({
-        boxClass: 'wow',
-        animateClass: 'animated',
-        offset: 120,
-        mobile: false,
-        live: true
+    // Set the height of slider
+    let sliderHeight = $(window).height();
+    $('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css("height", sliderHeight);
+    $(window).resize(function(){
+        'use strict',
+        $('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css("height", sliderHeight);
     });
-    wow.init();
-    //END
+    // END
+
+    //Set the figure caption category
+    $('#work .container-fluid .branding figcaption p').toArray()
+    .forEach(item => {
+        item.textContent = "Branding";
+    });
+    $('#work .container-fluid .web figcaption p').toArray()
+    .forEach(item => {
+        item.textContent = "Web";
+    })
+    $('#work .container-fluid .logo-design figcaption p').toArray()
+    .forEach(item => {
+        item.textContent = "Logo Design";
+    })
+    $('#work .container-fluid .photography figcaption p').toArray()
+    .forEach(item => {
+        item.textContent = "Photography";
+    })
+    //End
+
+    //Fancy box
+    $('a.fancybox').fancybox({
+        'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	400, 
+		'speedOut'		:	200, 
+        'overlayShow'	:	true,
+    });
+
 });

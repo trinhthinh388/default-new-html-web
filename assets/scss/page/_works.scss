@@ -1,0 +1,109 @@
+@include font('Montserrat-ExtraBold', '../fonts/Montserrat-ExtraBold');
+
+#work{
+
+    .container{
+
+        .filter-btn{
+            text-align: center;
+        }
+
+        .row{
+
+            p{
+                font-weight: 600;
+                @include font-size(18px);
+                padding-top: 2rem;
+            }
+    
+            a{
+                font-family: 'Montserrat-ExtraBold', sans-serif;
+                background-color: transparent;
+                border-color: transparent;
+                color: #000000;
+                &:hover{
+                    color: #fff;
+                    background-color: $primary-green;
+                }
+
+                &:focus{
+                    color: #fff;
+                    background-color: $primary-green;
+                }
+            }
+        }
+    }
+    
+    .container-fluid{
+        .photo{
+            position: relative;
+            width: 100%;
+            float: left;
+            img{
+                height: auto;
+                width: 100%;
+            }
+        
+            @media (min-width: 35rem) and (max-width: 40rem) {
+                width: 50%;
+            }
+
+            @media (min-width: 40rem) and (max-width: 63rem) {
+                width: 33.33%;
+            }
+
+            @media (min-width: 60rem) {
+                width: 25%;
+            }
+
+            figcaption{
+                text-align: center;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                opacity: 1;
+                background-color: $primary-green;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                -webkit-transition: all .4s ease-out;
+                -moz-transition: all .4s ease-out;
+                -o-transition: all .4s ease-out;
+                transition: all .4s ease-out;
+                transform: rotateY(180deg) scale(0.5,0.5);
+                color: #fff;
+
+                a{
+                    border: 1px solid #ffffff;
+                    border-radius: 50%;
+                    margin-top: 20%;
+                    display: inline-block;
+                    padding: .45rem .625rem;
+                    i{
+                        @include font-size(20px);
+                        
+                    }
+
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+
+                h4{
+                    font-family: 'Montserrat-ExtraBold', sans-serif;
+                    padding: 10px 0px;;
+                }
+                p{
+                    font-family: 'Montserrat-ExtraBold', sans-serif;
+                }
+            }
+
+            &:hover{
+                figcaption{
+                    opacity: 1;
+                    transform: rotateY(0deg) scale(1,1);
+                }
+            }
+        }
+    }
+}
