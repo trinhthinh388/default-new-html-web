@@ -17,41 +17,41 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/animate.css">
-    <link rel="stylesheet" href="assets/css/vendor/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
 </head>
 <body>
     <header id="navigation" class="navbar-fixed-top navbar">
         <div class="container">
-            <div class="navbar-header">
-                <!-- responsive nav button -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <i class="fas fa-bars fa-2x"></i>
-                </button>
-                <!-- /responsive nav button -->
-                
-                <!-- logo -->
-                <a class="navbar-brand" href="#body">
-                    <h1 id="logo">Brandi</h1>
-                    <i>I'm your tag line</i>
-                </a>
-                <!-- /logo -->
+            <div class="row">
+                <div class="navigation__header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fas fa-bars fa-2x"></i>
+                    </button>
+                    <!-- /responsive nav button -->
+                    
+                    <!-- logo -->
+                    <a class="navbar-brand" href="#body">
+                        <h1 id="logo">Brandi</h1>
+                        <i>I'm your tag line</i>
+                    </a>
+                    <!-- /logo -->
+                </div>
+    
+                <!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        `<li><a href="#">Home</a></li>
+                        <li><a href="#feature">Features</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="http://google.com">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- /main nav -->
             </div>
-
-            <!-- main nav -->
-            <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                <ul id="nav" class="nav navbar-nav">
-                    <li class="current"><a href="#body">Home</a></li>
-                    <li><a href="#feature">Features</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="http://google.com">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- /main nav -->
-            
         </div>
     </header>
 
@@ -60,103 +60,164 @@
         ==================================== -->
 		
 		<section id="slider">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			
-				<!-- Indicators bullet -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				</ol>
-				<!-- End Indicators bullet -->				
-				
 				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					
+				<div class="slider__inner">				
 					<!-- single slide -->
-					<div class="item active" style="background-image: url(assets/img/banner.jpg);">
-						<div class="carousel-caption">
-							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Brandi</span>!</h2>
-							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
-							<p data-wow-duration="1000ms" class="wow slideInRight animated">We are a team of professionals</p>
-							
-							<ul class="social-links text-center">
-								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-								<li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
-							</ul>
+					<div style="background-image: url(assets/img/banner.jpg);">
+						<div class="slide__content">
+							<h2>Meet<span> Brandi</span>!</h2>
+							<h3><span class="color">/creative</span> one page template.</h3>
+							<p>We are a team of professionals</p>
 						</div>
 					</div>
 					<!-- end single slide -->
 					
 					<!-- single slide -->
-					<div class="item" style="background-image: url(assets/img/banner.jpg);">
-						<div class="carousel-caption">
-							<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Team</span>!</h2>
-							<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
-							<p data-wow-duration="500ms" class="wow slideInRight animated">We are a team of professionals</p>
-							
-							<ul class="social-links text-center">
-								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-								<li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
-							</ul>
+					<div style="background-image: url(assets/img/banner.jpg);">
+						<div class="slide__content">
+							<h2>Meet<span> Team</span>!</h2>
+							<h3><span class="color">/creative</span> one page template.</h3>
+							<p>We are a team of professionals</p>
 						</div>
 					</div>
 					<!-- end single slide -->
-					
 				</div>
 				<!-- End Wrapper for slides -->
-				
-			</div>
+				<ul class="slider__social-links text-center">
+                    <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                    <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+                </ul>
         </section>
         
         <!-- Feature -->
         <section id="feature" class="feature">
             <div class="container">
                 <div class="row">
-                    <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+                    <div class="section__title text-center mb50">
                         <h2>Features</h2>
                         <div class="devider"> <i class="fa fa-heart-o fa-lg"></i> </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="fa fa-github fa-2x"></i>
+                <div class="row container container__slider">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service__item">
+                                <div class="service__icon">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </div>
+                                <div class="col service__desc">
+                                    <h3>Branding</h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="service-desc">
-                            <h3>Branding</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+        
+                        <div class="col-lg-4">
+                            <div class="service__item">
+                                <div class="service__icon">
+                                    <i class="fa fa-pencil fa-2x"></i>
+                                </div>
+                                
+                                <div class="service__desc">
+                                    <h3>Development</h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <div class="service__item">
+                                <div class="service__icon">
+                                    <i class="fa fa-bullhorn fa-2x"></i>
+                                </div>
+                                
+                                <div class="service__desc">
+                                    <h3>Consulting</h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="fa fa-pencil fa-2x"></i>
+    
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service__item">
+                                <div class="service__icon">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </div>
+                                <div class="col service__desc">
+                                    <h3>Branding</h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="service-desc">
-                            <h3>Development</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+        
+                        <div class="col-lg-4">
+                            <div class="service__item">
+                                <div class="service__icon">
+                                    <i class="fa fa-pencil fa-2x"></i>
+                                </div>
+                                
+                                <div class="service__desc">
+                                    <h3>Development</h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <div class="service__item">
+                                <div class="service__icon">
+                                    <i class="fa fa-bullhorn fa-2x"></i>
+                                </div>
+                                
+                                <div class="service__desc">
+                                    <h3>Consulting</h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="fa fa-bullhorn fa-2x"></i>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service__item">
+                                <div class="service__icon">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </div>
+                                <div class="col service__desc">
+                                    <h3>Branding</h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="service-desc">
-                            <h3>Consulting</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+        
+                        <div class="col-lg-4">
+                            <div class="service__item">
+                                <div class="service__icon">
+                                    <i class="fa fa-pencil fa-2x"></i>
+                                </div>
+                                
+                                <div class="service__desc">
+                                    <h3>Development</h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <div class="service__item">
+                                <div class="service__icon">
+                                    <i class="fa fa-bullhorn fa-2x"></i>
+                                </div>
+                                
+                                <div class="service__desc">
+                                    <h3>Consulting</h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,14 +229,14 @@
         <section id="work" class="work">
             <div class="container">
                 <div class="row">
-                    <div class="sec-title text-center mb50">
+                    <div class="section__title text-center mb50">
                         <h2>Works</h2>
                         <div class="devider"> <i class="fa fa-heart-o fa-lg"></i> </div>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                     </div>
                 </div>
 
-                <div class="wow mb50 row fadeInRight filter-btn" data-wow-duration="500ms">
+                <div class="row mb50 filter-btn">
                     <a href="javascript:;" role="button" class="btn btn-primary" data-filter="all">All</a>
                     <a href="javascript:;" class="btn btn-primary" data-filter=".branding">Branding</a>
                     <a href="javascript:;" class="btn btn-primary" data-filter=".web">Web</a>
@@ -183,71 +244,76 @@
                     <a href="javascript:;" class="btn btn-primary" data-filter=".photography">Photography</a>
                 </div>
             </div>
-            <div class="container-fluid">
-                <figure class="mix photo branding">
+            <div class="container-fluid row">
+                <figure class="photo branding">
                     <img src="./assets//img/works/item-1.jpg" alt="">
                     <figcaption>
-                        <a class="fancybox" href="./assets/img/works/item-1.jpg"> <i class="fa fa-eye fa-large"></i> </a>
+                        <a class="fancybox" data-source="./assets/img/works/item-1.jpg"> <i class="fa fa-eye fa-large"></i> </a>
                         <h4>Labore et dolore magnam</h4>
                         <p></p>
                     </figcaption>
                 </figure>
-                <figure class="mix photo web">
+                <figure class="photo web">
                     <img src="./assets//img/works/item-2.jpg" alt="">
                     <figcaption>
-                        <a class="fancybox" href="./assets/img/works/item-2.jpg"> <i class="fa fa-eye fa-large"></i> </a>
+                        <a class="fancybox" data-source="./assets/img/works/item-2.jpg"> <i class="fa fa-eye fa-large"></i> </a>
                         <h4>Labore et dolore magnam</h4>
                         <p></p>
                     </figcaption>
                 </figure>
-                <figure class="mix photo logo-design">
+                <figure class="photo logo-design">
                     <img src="./assets//img/works/item-3.jpg" alt="">
                     <figcaption>
-                        <a class="fancybox" href="./assets/img/works/item-3.jpg"> <i class="fa fa-eye fa-large"></i> </a>
+                        <a class="fancybox" data-source="./assets/img/works/item-3.jpg"> <i class="fa fa-eye fa-large"></i> </a>
                         <h4>Labore et dolore magnam</h4>
                         <p></p>
                     </figcaption>
                 </figure>
-                <figure class="mix photo photography">
+                <figure class="photo photography">
                     <img src="./assets//img/works/item-4.jpg" alt="">
                     <figcaption>
-                        <a class="fancybox" href="./assets/img/works/item-4.jpg"> <i class="fa fa-eye fa-large"></i> </a>
+                        <a class="fancybox" data-source="./assets/img/works/item-4.jpg"> <i class="fa fa-eye fa-large"></i> </a>
                         <h4>Labore et dolore magnam</h4>
                         <p></p>
                     </figcaption>
                 </figure>
-                <figure class="mix photo branding">
+                <figure class="photo branding">
                     <img src="./assets//img/works/item-5.jpg" alt="">
                     <figcaption>
-                        <a class="fancybox" href="./assets/img/works/item-5.jpg"> <i class="fa fa-eye fa-large"></i> </a>
+                        <a class="fancybox" data-source="./assets/img/works/item-5.jpg"> <i class="fa fa-eye fa-large"></i> </a>
                         <h4>Labore et dolore magnam</h4>
                         <p></p>
                     </figcaption>
                 </figure>
-                <figure class="mix photo web">
+                <figure class="photo web">
                     <img src="./assets//img/works/item-6.jpg" alt="">
                     <figcaption>
-                        <a class="fancybox" href="./assets/img/works/item-6.jpg"> <i class="fa fa-eye fa-large"></i> </a>
+                        <a class="fancybox" data-source="./assets/img/works/item-6.jpg"> <i class="fa fa-eye fa-large"></i> </a>
                         <h4>Labore et dolore magnam</h4>
                         <p></p>
                     </figcaption>
                 </figure>
-                <figure class="mix photo logo-design">
+                <figure class="photo logo-design">
                     <img src="./assets//img/works/item-7.jpg" alt="">
                     <figcaption>
-                        <a class="fancybox" href="./assets/img/works/item-7.jpg"> <i class="fa fa-eye fa-large"></i> </a>
+                        <a class="fancybox" data-source="./assets/img/works/item-7.jpg"> <i class="fa fa-eye fa-large"></i> </a>
                         <h4>Labore et dolore magnam</h4>
                         <p></p>
                     </figcaption>
                 </figure>
-                <figure class="mix photo photography">
+                <figure class="photo photography">
                     <img src="./assets//img/works/item-8.jpg" alt="">
                     <figcaption>
-                        <a class="fancybox" href="./assets/img/works/item-8.jpg"> <i class="fa fa-eye fa-lg"></i> </a>
+                        <a class="fancybox" data-source="./assets/img/works/item-8.jpg"> <i class="fa fa-eye fa-lg"></i> </a>
                         <h4>Labore et dolore magnam</h4>
                         <p></p>
                     </figcaption>
                 </figure>
+            </div>
+            <div class="work__lightbox">
+                <div class="lightbox__content">
+                    <img alt="light box image">
+                </div>
             </div>
         </section>
         <!-- End work -->
@@ -260,25 +326,7 @@
 <!-- Vendor -->
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/vendor/jquery.singlePageNav.min.js"></script>
-<script src="assets/js/vendor/wow.min.js"></script>
-<script src="assets/js/vendor/mixitup.min.js"></script>
-<script src="assets/js/vendor/jquery.fancybox.pack.js"></script>
-<script>
-    let wow = new WOW({
-        boxClass: 'wow',
-        animateClass: 'animated',
-        offset: 120,
-        mobile: false,
-        live: true
-    });
-    wow.init();
-</script>
-<script>
-    let containerEl = document.querySelector(".container-fluid");
-    let mixer = mixitup(containerEl);
-    console.log(mixer);
-</script>
+<script type="text/javascript" src="/assets/js/vendor/slick.min.js"></script>
 <!-- Vendor -->
 
 <!-- Main.js -->

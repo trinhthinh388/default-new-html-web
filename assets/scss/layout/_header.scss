@@ -4,49 +4,48 @@ header{
   background-color: rgba(16, 22, 54, 0.2);
   border: 0 none;
   margin: 0;
-  
-    -webkit-transition: background-color 800ms linear;
-       -moz-transition: background-color 800ms linear;
-	    -ms-transition: background-color 800ms linear;
-         -o-transition: background-color 800ms linear;
-      transition: background-color 800ms linear;
-      
-
+  @include animate(.4s, linear);
   .container{
-    .navbar-header{
-      color: #ffffff;
-    }
-  
-    .navbar-brand{
-      padding: 0;
-      margin-left: 10px;
-      @include flex();
-      align-items: center;
-      h1{
-        font-family: 'Pacifico-Regular' ,Arial, sans-serif;
-        @include font-size(32px);
-      }
-      i{
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        @include font-size(12px);
-        font-weight: 600;
-        padding: 0 20px;
-        margin-left: 20px;
-        line-height: 15px;
-        color: rgba($color: #f5f5f5, $alpha: 0.2);
-        border-left: 1px solid rgba(13, 143, 97, 0.3);
-      }
-    }
-    .navbar-nav{
-      li{
-        a{
-          border-top: 1px solid transparent;
 
-          &:hover, &:focus{
-            background-color: transparent;
-            border-top: 1px solid #32B0EE;
-            color: #fff;
+    .navigation__header{
+      color: #ffffff;
+      .navbar-brand{
+        padding: 0;
+        margin-left: 0px !important;
+        @include flex();
+        align-items: center;
+        h1{
+          font-family: 'Pacifico-Regular' ,Arial, sans-serif;
+          @include font-size(32px);
+        }
+        i{
+          font-family: 'Open Sans', sans-serif;
+          font-style: normal;
+          @include font-size(15px);
+          font-weight: 300;
+          padding: 0 20px;
+          margin-left: 20px;
+          color: rgba($color: #f5f5f5, $alpha: 0.5);
+          border-left: 1px solid rgba($color: #f5f5f5, $alpha: 0.5);
+          @include animate(.4s, ease-out);
+        }
+      }
+    }
+
+    .navbar-collapse{
+      .navbar-nav{
+        li{
+          @media (max-width: 40rem){
+              text-align: center;
+          }
+          a{
+            border-top: 1px solid transparent;
+  
+            &:hover, &:focus{
+              background-color: transparent;
+              border-top: 1px solid #32B0EE;
+              color: #fff;
+            }
           }
         }
       }

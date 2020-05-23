@@ -1,8 +1,11 @@
 #feature{
     background-color: #f4f7f9;
-
-    .service-item{
-        .service-icon{
+    .row{
+        margin: 0;
+    }
+    .service__item{
+        padding: 0px 10px;
+        .service__icon{
             border: 1px solid #0eb493;
             border-radius: 50%;
             color: #0eb493;
@@ -10,15 +13,32 @@
             padding: 10px 13px;
         }
 
-        .service-desc{
+        .service__desc{
             margin-left: 70px;
             position: relative;
-            top: 5px;
             h3{
                 color: #062033;
                 @include font-size(20px);
                 font-weight: 600;
                 margin-bottom: 25px;
+            }
+        }
+    }
+
+    .container__slider{
+        .slick-dots{
+            margin-bottom: -3rem;
+            li{
+                button{
+                    border: 1px solid rgba($color: #c3c6c7, $alpha: 1);
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    padding: 2px;
+                    &:before{
+                        content: '';
+                    }
+                }
             }
         }
     }

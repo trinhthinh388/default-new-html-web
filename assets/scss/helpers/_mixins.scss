@@ -532,3 +532,11 @@
     font-style: normal;
   }
 }
+
+//Ease-out animation
+@mixin animate($time, $animation){
+  -webkit-transition: all $time $animation;
+     -moz-transition: all $time $animation;
+       -o-transition: all $time $animation;
+          transition: all $time $animation;
+}
