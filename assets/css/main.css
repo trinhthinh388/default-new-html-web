@@ -7652,7 +7652,6 @@ header .container .navbar-collapse .navbar-nav li a:hover, header .container .na
 
 #slider .slider__social-links {
   position: absolute;
-  background: aquamarine;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7684,8 +7683,8 @@ header .container .navbar-collapse .navbar-nav li a:hover, header .container .na
 
 #slider .slider__inner .slide__content {
   display: block !important;
+  width: 100%;
   position: absolute;
-  margin: 0 auto;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -7705,11 +7704,25 @@ header .container .navbar-collapse .navbar-nav li a:hover, header .container .na
   font-weight: 800;
 }
 
+@media screen and (max-width: 40rem) {
+  #slider .slider__inner .slide__content h2 {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
+
 #slider .slider__inner .slide__content h3 {
   font-size: 48px;
   font-size: 3rem;
   font-weight: 300;
   margin: 6px 0 20px;
+}
+
+@media screen and (max-width: 40rem) {
+  #slider .slider__inner .slide__content h3 {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
 }
 
 #slider .slider__inner .slide__content p {

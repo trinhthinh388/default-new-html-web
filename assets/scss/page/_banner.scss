@@ -6,7 +6,6 @@
 
     .slider__social-links{
         position: absolute;
-        background: aquamarine;
         display: flex;
         padding: 0px 0px;
         top: 80%;
@@ -31,8 +30,8 @@
         margin: 0;
         .slide__content{
             display: block !important;
+            width: 100%;
             position: absolute;
-            margin: 0 auto;
             left: 50%;
             transform: translateX(-50%);
             padding-top: 10rem;
@@ -44,12 +43,19 @@
                     font-family: 'Montserrat-ExtraBold', sans-serif;
                     font-weight: 800;
                 }
+
+                @media screen and (max-width:40rem){
+                    @include font-size(50px);
+                }
             }
     
             h3{
                 @include font-size(48px);
                 font-weight: 300;
                 margin: 6px 0 20px;
+                @media screen and (max-width:40rem){
+                    @include font-size(40px);
+                }
                 
             }
     

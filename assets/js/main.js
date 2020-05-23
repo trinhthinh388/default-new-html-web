@@ -53,7 +53,7 @@ $(document).ready(function(){
             $('.navigation__header').addClass("row");
             $('.navbar-brand i').css("display", "none");
             let widthLogo = $('.navbar-brand').width();
-            $('.navbar-brand').css("transform", `translateX(calc(100vw/2 -  ${widthLogo}px/2))`);
+            $('.navbar-brand').css("transform", `translateX(calc(100vw/2 ))`);
         }
         else{
             $('.navigation__header').removeClass("row");
