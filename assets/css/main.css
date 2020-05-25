@@ -7410,7 +7410,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/fa-brands-400.eot");
-  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg") format("svg");
 }
 
 .fab {
@@ -7586,11 +7586,73 @@ header {
   transition: all 0.4s linear;
 }
 
-header .container .navigation__header {
+header .container .nav--smartphone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  z-index: 100;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: none;
+}
+
+header .container .nav--smartphone .nav--smartphone__menu .navbar-nav {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+header .container .nav--smartphone .nav--smartphone__menu .navbar-nav li {
+  padding: 1rem 0rem;
+}
+
+header .container .nav--smartphone .nav--smartphone__menu .navbar-nav li a {
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 500;
+  background: transparent;
+}
+
+header .container .nav--smartphone .nav--smartphone__menu .navbar-nav li a:focus {
+  color: #0eb493;
+  background-color: transparent;
+}
+
+header .container .nav--smartphone .nav--smartphone__menu .navbar-nav li a:focus {
+  color: #0eb493;
+  background-color: transparent;
+}
+
+header .container .row .row__button--collapse {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 100%;
+  right: 0;
+  display: none;
+  z-index: 100000;
+}
+
+@media screen and (max-width: 60rem) {
+  header .container .row .row__button--collapse {
+    display: block;
+  }
+}
+
+header .container .row .row__button--collapse i {
   color: #ffffff;
 }
 
-header .container .navigation__header .navbar-brand {
+header .container .row__header {
+  color: #ffffff;
+}
+
+header .container .row__header .navbar-brand {
   padding: 0;
   margin-left: 0px !important;
   display: -ms-flexbox;
@@ -7601,13 +7663,13 @@ header .container .navigation__header .navbar-brand {
           align-items: center;
 }
 
-header .container .navigation__header .navbar-brand h1 {
+header .container .row__header .navbar-brand h1 {
   font-family: 'Pacifico-Regular' ,Arial, sans-serif;
   font-size: 32px;
   font-size: 2rem;
 }
 
-header .container .navigation__header .navbar-brand i {
+header .container .row__header .navbar-brand i {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-size: 15px;
@@ -7621,17 +7683,17 @@ header .container .navigation__header .navbar-brand i {
   transition: all 0.4s ease-out;
 }
 
-@media (max-width: 40rem) {
-  header .container .navbar-collapse .navbar-nav li {
-    text-align: center;
+@media screen and (max-width: 60rem) {
+  header .container .row__nav--right {
+    display: none;
   }
 }
 
-header .container .navbar-collapse .navbar-nav li a {
+header .container .row__nav--right .navbar-nav li a {
   border-top: 1px solid transparent;
 }
 
-header .container .navbar-collapse .navbar-nav li a:hover, header .container .navbar-collapse .navbar-nav li a:focus {
+header .container .row__nav--right .navbar-nav li a:hover, header .container .row__nav--right .navbar-nav li a:focus {
   background-color: transparent;
   border-top: 1px solid #32B0EE;
   color: #fff;
@@ -7693,6 +7755,18 @@ header .container .navbar-collapse .navbar-nav li a:hover, header .container .na
   transition: all 0.4s ease-out;
 }
 
+@media screen and (min-width: 35rem) and (max-width: 50rem) {
+  #slider .slider__inner .slide__content {
+    padding-top: 0rem;
+  }
+}
+
+@media screen and (min-width: 40rem) and (max-width: 56rem) {
+  #slider .slider__inner .slide__content {
+    padding-top: 5rem;
+  }
+}
+
 #slider .slider__inner .slide__content h2 {
   font-size: 62px;
   font-size: 3.875rem;
@@ -7706,8 +7780,15 @@ header .container .navbar-collapse .navbar-nav li a:hover, header .container .na
 
 @media screen and (max-width: 40rem) {
   #slider .slider__inner .slide__content h2 {
-    font-size: 50px;
-    font-size: 3.125rem;
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 40rem) and (max-width: 56rem) {
+  #slider .slider__inner .slide__content h2 {
+    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 
@@ -7720,8 +7801,15 @@ header .container .navbar-collapse .navbar-nav li a:hover, header .container .na
 
 @media screen and (max-width: 40rem) {
   #slider .slider__inner .slide__content h3 {
-    font-size: 40px;
-    font-size: 2.5rem;
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
+
+@media screen and (min-width: 40rem) and (max-width: 56rem) {
+  #slider .slider__inner .slide__content h3 {
+    font-size: 25px;
+    font-size: 1.5625rem;
   }
 }
 
@@ -7747,6 +7835,13 @@ header .container .navbar-collapse .navbar-nav li a:hover, header .container .na
   left: 20px;
 }
 
+@media screen and (min-width: 40rem) and (max-width: 56rem) {
+  #slider .slider__inner .slide__content p {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
+
 #slider .slider__inner .slick-dots {
   position: absolute;
   top: 95%;
@@ -7759,6 +7854,12 @@ header .container .navbar-collapse .navbar-nav li a:hover, header .container .na
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media screen and (max-width: 55rem) {
+  #slider .slider__inner .slick-dots {
+    display: none !important;
+  }
 }
 
 #slider .slider__inner .slick-dots li button {
@@ -7838,6 +7939,9 @@ header .container .navbar-collapse .navbar-nav li a:hover, header .container .na
 
 #feature .container__slider .slick-dots {
   margin-bottom: -3rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #feature .container__slider .slick-dots li button {
@@ -7948,7 +8052,7 @@ header .container .navbar-collapse .navbar-nav li a:hover, header .container .na
   color: #fff;
 }
 
-@media (max-width: 63rem) {
+@media (max-width: 60rem) {
   #work .container-fluid .photo figcaption {
     display: none;
   }

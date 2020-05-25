@@ -45,6 +45,37 @@ $(document).ready(function(){
         item.textContent = "Photography";
     })
     //End
+    // Header nav collapse
+    function openCollapseMenu(viewport){
+        if(viewport.matches){
+
+        }
+    }
+
+    $('.row__button--collapse').click(function(){
+        if($('.nav--smartphone').css('display') === 'block'){
+            
+            $('.nav--smartphone').css('transform', 'translateX(100%)');
+            setTimeout(()=>{
+                $('.nav--smartphone').css('display', 'none');
+            }, 200);
+            $('.row__button--collapse i').removeClass('fas');
+            $('.row__button--collapse i').removeClass('fa-times');
+            $('.row__button--collapse i').addClass('fa');
+            $('.row__button--collapse i').addClass('fa-bars');
+        }
+        else{
+            $('.nav--smartphone').css('display', 'block');
+            setTimeout(()=>{
+                $('.nav--smartphone').css('transform', 'translateX(0%)');
+            }, 100);
+            $('.row__button--collapse i').removeClass('fa');
+            $('.row__button--collapse i').removeClass('fa-bars');
+            $('.row__button--collapse i').addClass('fas');
+            $('.row__button--collapse i').addClass('fa-times');
+        }
+    })
+    //END
 
     //Logo
     function translateLogo(viewport){
@@ -53,7 +84,8 @@ $(document).ready(function(){
             $('.navigation__header').addClass("row");
             $('.navbar-brand i').css("display", "none");
             let widthLogo = $('.navbar-brand').width();
-            $('.navbar-brand').css("transform", `translateX(calc(100vw/2 ))`);
+            console.log(`translateX(50vw - ${widthLogo / 2}px)`);
+            $('.navbar-brand').css("transform", `translateX(calc(50vw - ${widthLogo / 2}px))`);
         }
         else{
             $('.navigation__header').removeClass("row");
@@ -63,8 +95,12 @@ $(document).ready(function(){
     }
     let viewport = window.matchMedia("(max-width: 40rem)");
     translateLogo(viewport);
+    openCollapseMenu(viewport);
     viewport.addListener(translateLogo);
+    viewport.addListener(openCollapseMenu);
     //END
+
+    
 
     //Init Slick
     $('.container__slider').slick({

@@ -16,7 +16,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
     <link rel="stylesheet" href="assets/css/vendor/slick.css">
@@ -25,14 +24,7 @@
     <header id="navigation" class="navbar-fixed-top navbar">
         <div class="container">
             <div class="row">
-                <div class="navigation__header">
-                    <!-- responsive nav button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fas fa-bars fa-2x"></i>
-                    </button>
-                    <!-- /responsive nav button -->
-                    
+                <div class="row__header">              
                     <!-- logo -->
                     <a class="navbar-brand" href="#body">
                         <h1 id="logo">Brandi</h1>
@@ -42,7 +34,23 @@
                 </div>
     
                 <!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <nav class="row__nav--right navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        `<li><a href="#">Home</a></li>
+                        <li><a href="#feature">Features</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="http://google.com">Contact</a></li>
+                    </ul>
+                </nav>            
+                <!-- /main nav -->
+
+                <button class="row__button--collapse">
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <div class="nav--smartphone">
+                <nav class="nav--smartphone__menu" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         `<li><a href="#">Home</a></li>
                         <li><a href="#feature">Features</a></li>
@@ -51,7 +59,6 @@
                         <li><a href="http://google.com">Contact</a></li>
                     </ul>
                 </nav>
-                <!-- /main nav -->
             </div>
         </div>
     </header>
@@ -85,10 +92,10 @@
 				</div>
 				<!-- End Wrapper for slides -->
 				<ul class="slider__social-links text-center">
-                    <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                    <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                    <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                    <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter fa-lg"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook fa-lg"></i></a></li>
+                    <li><a href=""><i class="fab fa-google-plus fa-lg"></i></a></li>
+                    <li><a href=""><i class="fab fa-dribbble fa-lg"></i></a></li>
                 </ul>
         </section>
         
@@ -98,7 +105,7 @@
                 <div class="row">
                     <div class="section__title text-center mb50">
                         <h2>Features</h2>
-                        <div class="devider"> <i class="fa fa-heart-o fa-lg"></i> </div>
+                        <div class="devider"> <i class="fas fa-heart fa-lg"></i> </div>
                     </div>
                 </div>
 
@@ -107,7 +114,7 @@
                         <div class="col-lg-4">
                             <div class="service__item">
                                 <div class="service__icon">
-                                    <i class="fa fa-github fa-2x"></i>
+                                    <i class="fab fa-github fa-2x"></i>
                                 </div>
                                 <div class="col service__desc">
                                     <h3>Branding</h3>
@@ -119,7 +126,7 @@
                         <div class="col-lg-4">
                             <div class="service__item">
                                 <div class="service__icon">
-                                    <i class="fa fa-pencil fa-2x"></i>
+                                    <i class="fas fa-pencil-alt fa-2x"></i>
                                 </div>
                                 
                                 <div class="service__desc">
@@ -147,7 +154,7 @@
                         <div class="col-lg-4">
                             <div class="service__item">
                                 <div class="service__icon">
-                                    <i class="fa fa-github fa-2x"></i>
+                                    <i class="fab fa-github fa-2x"></i>
                                 </div>
                                 <div class="col service__desc">
                                     <h3>Branding</h3>
@@ -159,7 +166,7 @@
                         <div class="col-lg-4">
                             <div class="service__item">
                                 <div class="service__icon">
-                                    <i class="fa fa-pencil fa-2x"></i>
+                                    <i class="fas fa-pencil-alt fa-2x"></i>
                                 </div>
                                 
                                 <div class="service__desc">
@@ -186,7 +193,7 @@
                         <div class="col-lg-4">
                             <div class="service__item">
                                 <div class="service__icon">
-                                    <i class="fa fa-github fa-2x"></i>
+                                    <i class="fab fa-github fa-2x"></i>
                                 </div>
                                 <div class="col service__desc">
                                     <h3>Branding</h3>
@@ -198,7 +205,7 @@
                         <div class="col-lg-4">
                             <div class="service__item">
                                 <div class="service__icon">
-                                    <i class="fa fa-pencil fa-2x"></i>
+                                    <i class="fas fa-pencil-alt fa-2x"></i>
                                 </div>
                                 
                                 <div class="service__desc">
@@ -232,7 +239,7 @@
                 <div class="row">
                     <div class="section__title text-center mb50">
                         <h2>Works</h2>
-                        <div class="devider"> <i class="fa fa-heart-o fa-lg"></i> </div>
+                        <div class="devider"> <i class="fas fa-heart fa-lg"></i> </div>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                     </div>
                 </div>

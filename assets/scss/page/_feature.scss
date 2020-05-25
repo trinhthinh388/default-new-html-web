@@ -28,6 +28,8 @@
     .container__slider{
         .slick-dots{
             margin-bottom: -3rem;
+            left: 50%;
+            transform: translateX(-50%);
             li{
                 button{
                     border: 1px solid rgba($color: #c3c6c7, $alpha: 1);
