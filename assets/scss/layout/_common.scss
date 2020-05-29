@@ -78,15 +78,15 @@ span.color {
 }
 
 
-.feature__title{
+.section-title{
   h2{
     color: #0eb493;
-    @include font-size(20px);
+    @include font-size(28px);
     font-weight: 900;
     text-transform: uppercase;
     font-family: 'OpenSans-ExtraBold';
     font-weight: 900;
-    margin-bottom: 30px;
+    margin-bottom: 19px;
   }
 }
 
@@ -107,3 +107,14 @@ span.color {
     }
   }
 }
+
+.ti-heart{
+  &::before{
+    content: "\e634";
+  }
+}
+
+.filter--selected{
+  color: #fff;
+  background-color: $primary-green;
+} 

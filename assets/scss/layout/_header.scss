@@ -16,6 +16,7 @@ header{
       .row__brand{
         height: 100%;
         float: left;
+        margin-right: 15px;
         .navbar-brand{
           padding: 0;
           height: 100%;
@@ -53,6 +54,7 @@ header{
           display: none;
         }
         height: 100%;
+        margin-right: 0;
         .navbar-nav{
           border: 0px;
           height: 100%;
@@ -127,6 +129,8 @@ header{
         right: 0;
         display: none;
         z-index: 100000;
+        background-color: transparent;
+        border-color: transparent;
         @media screen and (max-width: 50rem) {
           display: block;
         }

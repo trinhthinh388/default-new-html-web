@@ -121,30 +121,10 @@ $(document).ready(function(){
 
     //Work photo filter
     function onFilterBtnClick(){
-        let dataOffset = [{
-            'x': $('.photo').offset().left,
-            'y': $('.photo').offset().top
-        }];
-        let width = $('.photo').width();
-        let height = $('photo').height();
         let filters = [".branding", ".photography", ".web", ".logo-design"];
         let dataFilter = $(this).attr("data-filter");
-        $('.filter-btn a').removeClass("filter--selected");
+        $('.container__button--filter a').removeClass("filter--selected");
         $(`[data-filter="${dataFilter}"]`).addClass("filter--selected");
-        for(let i = 1; i < $(dataFilter).length; i++){
-            if((i % 4) === 0 && i >= 4){
-                dataOffset = [...dataOffset, {
-                    'x': dataOffset[i-1].x + width,
-                    'y': dataOffset[i-1].y + height,
-                }];
-            }
-            dataOffset = [...dataOffset, {
-                'x': dataOffset[i-1].x + width,
-                'y': dataOffset[i-1].y,
-            }];
-        }
-        
-        console.log(dataOffset);
         if(dataFilter === 'all'){
             let timeOut1, timeOut2;
             $('.photo').css('opacity', '0');
@@ -176,7 +156,7 @@ $(document).ready(function(){
     }
 
     $('[data-filter="all"]').addClass('filter--selected');
-    $('.filter-btn a').on('click', onFilterBtnClick);
+    $('.container__button--filter a').on('click', onFilterBtnClick);
     //END
 
     //Lightbox 

@@ -13,6 +13,10 @@
         margin: 0 auto;
         .row__service{
             padding: 0px 15px 0px 31px;
+            margin-bottom: 30px;
+            @media screen and (min-width: 50rem){
+                margin-bottom: 0px;
+            }
             .service__icon{
                 height: 100%;
                 float: left;
@@ -28,7 +32,7 @@
                     color: #000000;
                     @include font-size(20px);
                     font-weight: 600;
-                    margin-bottom: 10px;
+                    margin-bottom: 18px;
                 }
             }
         }
