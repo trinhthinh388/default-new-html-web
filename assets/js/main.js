@@ -46,18 +46,12 @@ $(document).ready(function(){
     })
     //End
     // Header nav collapse
-    function openCollapseMenu(viewport){
-        if(viewport.matches){
-
-        }
-    }
-
     $('.row__button--collapse').click(function(){
-        if($('.nav--smartphone').css('display') === 'block'){
+        if($('.row__main-nav--smartphone').css('display') === 'block'){
             
-            $('.nav--smartphone').css('transform', 'translateX(100%)');
+            $('.row__main-nav--smartphone').css('transform', 'translateX(100%)');
             setTimeout(()=>{
-                $('.nav--smartphone').css('display', 'none');
+                $('.row__main-nav--smartphone').css('display', 'none');
             }, 200);
             $('.row__button--collapse i').removeClass('fas');
             $('.row__button--collapse i').removeClass('fa-times');
@@ -65,9 +59,9 @@ $(document).ready(function(){
             $('.row__button--collapse i').addClass('fa-bars');
         }
         else{
-            $('.nav--smartphone').css('display', 'block');
+            $('.row__main-nav--smartphone').css('display', 'block');
             setTimeout(()=>{
-                $('.nav--smartphone').css('transform', 'translateX(0%)');
+                $('.row__main-nav--smartphone').css('transform', 'translateX(0%)');
             }, 100);
             $('.row__button--collapse i').removeClass('fa');
             $('.row__button--collapse i').removeClass('fa-bars');
@@ -95,9 +89,7 @@ $(document).ready(function(){
     }
     let viewport = window.matchMedia("(max-width: 40rem)");
     translateLogo(viewport);
-    openCollapseMenu(viewport);
     viewport.addListener(translateLogo);
-    viewport.addListener(openCollapseMenu);
     //END
 
     
@@ -106,17 +98,21 @@ $(document).ready(function(){
     $('.container__slider').slick({
         dots: true,
         speed: 500,
-        arrows: false,
+        prevArrow: null,
+		nextArrow: null,
         slideToShow: 1,
         draggable: false,
     });
 
-    $('.slider__inner').slick({
+    $('.slider__slide').slick({
         dots: true,
-        speed: 500,
-        arrows: false,
-        slideToShow: 1,
-        draggable: false,
+		loop: true,
+		infinite: true,
+		prevArrow: null,
+		nextArrow: null,
+		speed: 300,
+		slidesToShow: 1,
+        slidesToScroll: 1,
     });
 
     $('.slider__inner').on('init', function(slick){

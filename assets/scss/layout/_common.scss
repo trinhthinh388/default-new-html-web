@@ -1,5 +1,3 @@
-@include font('Montserrat-ExtraBold', '../fonts/Montserrat-ExtraBold');
-
 body {
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -54,40 +52,41 @@ span.color {
 	color: #0feb9e;
 }
 
+
+
 .devider{
-  margin-top: 30px;
-
+  position: relative;
+  margin-bottom: 25px;
   i{
-    color: #cccccc;
+    color: #c3c6c7;
   }
-
   &::before, &::after{
-    content: "________________";
-    color: #e6e8ea;
-    position: relative;
+    content: "";
+    width: 90px;
+    height: 1px;
+    background-color: #c3c6c7;
+    position: absolute;
     bottom: 6px;
   }
-
   &::before{
-    right: 8px;
-  }
+    right: calc(50% + 23px);
+  };
 
   &::after{
-    left: 8px;
+    left: calc(50% + 23px);
   }
 }
 
-.mb50{
-  margin-bottom: 50px;
-}
 
-.section__title{
+.feature__title{
   h2{
     color: #0eb493;
-    @include font-size(23px);
+    @include font-size(20px);
     font-weight: 900;
     text-transform: uppercase;
-    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-family: 'OpenSans-ExtraBold';
+    font-weight: 900;
+    margin-bottom: 30px;
   }
 }
 

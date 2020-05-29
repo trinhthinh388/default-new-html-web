@@ -22,9 +22,9 @@
 </head>
 <body>
     <header id="navigation" class="navbar-fixed-top navbar">
-        <div class="container">
-            <div class="row">
-                <div class="row__header">              
+        <div class="container header__container">
+            <div class="row align-items-center container__row">
+                <div class="row__brand">              
                     <!-- logo -->
                     <a class="navbar-brand" href="#body">
                         <h1 id="logo">Brandi</h1>
@@ -34,9 +34,9 @@
                 </div>
     
                 <!-- main nav -->
-                <nav class="row__nav--right navbar-right" role="navigation">
+                <nav class="row__main-nav navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        `<li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#feature">Features</a></li>
                         <li><a href="#work">Work</a></li>
                         <li><a href="#team">Team</a></li>
@@ -45,20 +45,21 @@
                 </nav>            
                 <!-- /main nav -->
 
-                <button class="row__button--collapse">
-                    <i class="fa fa-bars fa-2x"></i>
-                </button>
-            </div>
-            <div class="nav--smartphone">
-                <nav class="nav--smartphone__menu" role="navigation">
+                <!-- main nav for smartphone -->
+                <nav class="row__main-nav--smartphone" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        `<li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#feature">Features</a></li>
                         <li><a href="#work">Work</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="http://google.com">Contact</a></li>
                     </ul>
                 </nav>
+                <!-- main nav for smartphone -->
+
+                <button class="row__button--collapse">
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -69,9 +70,9 @@
 		
 		<section id="slider">
 				<!-- Wrapper for slides -->
-				<div class="slider__inner">				
+				<div class="slider__slide">				
 					<!-- single slide -->
-					<div style="background-image: url(assets/img/banner.jpg);">
+					<div class="slide__background" style="background-image: url(assets/img/banner.jpg);">
 						<div class="slide__content">
 							<h2>Meet<span> Brandi</span>!</h2>
 							<h3><span class="color">/creative</span> one page template.</h3>
@@ -81,7 +82,7 @@
 					<!-- end single slide -->
 					
 					<!-- single slide -->
-					<div style="background-image: url(assets/img/banner.jpg);">
+					<div class="slide__background" style="background-image: url(assets/img/banner.jpg);">
 						<div class="slide__content">
 							<h2>Meet<span> Team</span>!</h2>
 							<h3><span class="color">/creative</span> one page template.</h3>
@@ -101,135 +102,113 @@
         
         <!-- Feature -->
         <section id="feature" class="feature">
-            <div class="container">
-                <div class="row">
-                    <div class="section__title text-center mb50">
-                        <h2>Features</h2>
-                        <div class="devider"> <i class="fas fa-heart fa-lg"></i> </div>
-                    </div>
+                <div class="devider feature__title">
+                    <h2>Features</h2>
+                    <i class="fas fa-heart fa-lg"></i>
                 </div>
 
-                <div class="row container container__slider">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="service__item">
-                                <div class="service__icon">
-                                    <i class="fab fa-github fa-2x"></i>
-                                </div>
-                                <div class="col service__desc">
-                                    <h3>Branding</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                                </div>
+                <div class="container container__slider">
+                    <div class="row slider__row">
+                        <div class="col-lg-4 row__service">
+                            <div class="service__icon">
+                                <i class="fab fa-github fa-2x"></i>
+                            </div>
+                            <div class="service__desc">
+                                <h3>Branding</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                             </div>
                         </div>
         
-                        <div class="col-lg-4">
-                            <div class="service__item">
-                                <div class="service__icon">
-                                    <i class="fas fa-pencil-alt fa-2x"></i>
-                                </div>
-                                
-                                <div class="service__desc">
-                                    <h3>Development</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                                </div>
+                        <div class="col-lg-4 row__service">
+                            <div class="service__icon">
+                                <i class="fas fa-pencil-alt fa-2x"></i>
+                            </div>
+                            
+                            <div class="service__desc">
+                                <h3>Development</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                             </div>
                         </div>
         
-                        <div class="col-lg-4">
-                            <div class="service__item">
-                                <div class="service__icon">
-                                    <i class="fa fa-bullhorn fa-2x"></i>
-                                </div>
-                                
-                                <div class="service__desc">
-                                    <h3>Consulting</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                                </div>
+                        <div class="col-lg-4 row__service">
+                            <div class="service__icon">
+                                <i class="fa fa-bullhorn fa-2x"></i>
+                            </div>
+                            
+                            <div class="service__desc">
+                                <h3>Consulting</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                             </div>
                         </div>
                     </div>
     
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="service__item">
-                                <div class="service__icon">
-                                    <i class="fab fa-github fa-2x"></i>
-                                </div>
-                                <div class="col service__desc">
-                                    <h3>Branding</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                                </div>
+                    <div class="slider__row">
+                        <div class="col-lg-4 row__service">
+                            <div class="service__icon">
+                                <i class="fab fa-github fa-2x"></i>
+                            </div>
+                            <div class="service__desc">
+                                <h3>Branding</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                             </div>
                         </div>
         
-                        <div class="col-lg-4">
-                            <div class="service__item">
-                                <div class="service__icon">
-                                    <i class="fas fa-pencil-alt fa-2x"></i>
-                                </div>
-                                
-                                <div class="service__desc">
-                                    <h3>Development</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                                </div>
+                        <div class="col-lg-4 row__service">
+                            <div class="service__icon">
+                                <i class="fas fa-pencil-alt fa-2x"></i>
+                            </div>
+                            
+                            <div class="service__desc">
+                                <h3>Development</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                             </div>
                         </div>
         
-                        <div class="col-lg-4">
-                            <div class="service__item">
-                                <div class="service__icon">
-                                    <i class="fa fa-bullhorn fa-2x"></i>
-                                </div>
-                                
-                                <div class="service__desc">
-                                    <h3>Consulting</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                                </div>
+                        <div class="col-lg-4 row__service">
+                            <div class="service__icon">
+                                <i class="fa fa-bullhorn fa-2x"></i>
+                            </div>
+                            
+                            <div class="service__desc">
+                                <h3>Consulting</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="service__item">
-                                <div class="service__icon">
-                                    <i class="fab fa-github fa-2x"></i>
-                                </div>
-                                <div class="col service__desc">
-                                    <h3>Branding</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                                </div>
+                    <div class="row slider__row">
+                        <div class="col-lg-4 row__service">
+                            <div class="service__icon">
+                                <i class="fab fa-github fa-2x"></i>
+                            </div>
+                            <div class="service__desc">
+                                <h3>Branding</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                             </div>
                         </div>
         
-                        <div class="col-lg-4">
-                            <div class="service__item">
-                                <div class="service__icon">
-                                    <i class="fas fa-pencil-alt fa-2x"></i>
-                                </div>
-                                
-                                <div class="service__desc">
-                                    <h3>Development</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                                </div>
+                        <div class="col-lg-4 row__service">
+                            <div class="service__icon">
+                                <i class="fas fa-pencil-alt fa-2x"></i>
+                            </div>
+                            
+                            <div class="service__desc">
+                                <h3>Development</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                             </div>
                         </div>
         
-                        <div class="col-lg-4">
-                            <div class="service__item">
-                                <div class="service__icon">
-                                    <i class="fa fa-bullhorn fa-2x"></i>
-                                </div>
-                                
-                                <div class="service__desc">
-                                    <h3>Consulting</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                                </div>
+                        <div class="col-lg-4 row__service">
+                            <div class="service__icon">
+                                <i class="fa fa-bullhorn fa-2x"></i>
+                            </div>
+                            
+                            <div class="service__desc">
+                                <h3>Consulting</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- End features -->
 
@@ -237,7 +216,7 @@
         <section id="work" class="work">
             <div class="container">
                 <div class="row">
-                    <div class="section__title text-center mb50">
+                    <div class="section__title text-center mb65 mt77">
                         <h2>Works</h2>
                         <div class="devider"> <i class="fas fa-heart fa-lg"></i> </div>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
@@ -334,7 +313,7 @@
 <!-- Vendor -->
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
-<script type="text/javascript" src="/assets/js/vendor/slick.min.js"></script>
+<script type="text/javascript" src="/assets/js/vendor/slick.js"></script>
 <!-- Vendor -->
 
 <!-- Main.js -->

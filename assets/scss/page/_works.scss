@@ -1,5 +1,3 @@
-@include font('Montserrat-ExtraBold', '../fonts/Montserrat-ExtraBold');
-
 #work{
     position: relative;
 
@@ -20,7 +18,8 @@
             }
     
             a{
-                font-family: 'Montserrat-ExtraBold', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 900;
                 background-color: transparent;
                 border-color: transparent;
                 color: #000000;
@@ -98,11 +97,13 @@
                 }
 
                 h4{
-                    font-family: 'Montserrat-ExtraBold', sans-serif;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 900;
                     padding: 10px 0px;;
                 }
                 p{
-                    font-family: 'Montserrat-ExtraBold', sans-serif;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 900;
                 }
             }
 

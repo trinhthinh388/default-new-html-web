@@ -2,28 +2,106 @@
 
 header{
   background-color: rgba(16, 22, 54, 0.2);
-  border: 0 none;
+  border: 0px solid transparent !important;
   margin: 0;
   @include animate(.4s, linear);
-  .container{
+  @media screen and (min-width: 40rem){
+    height: 70px;
+  }
+  .header__container{
+    height: 100%;
+    .container__row{
+      color: #ffffff;
+      height: 100%;
+      .row__brand{
+        height: 100%;
+        float: left;
+        .navbar-brand{
+          padding: 0;
+          height: 100%;
+          margin-left: 0px !important;
+          @include flex();
+          align-items: center;
+          position: absolute;
+  
+          h1{
+            font-family: 'Pacifico-Regular';
+            @include font-size(30.5px);
+            @media screen and (min-width: 40){
+              margin-bottom: 19px;
+              margin-top: auto;
+            }
+          }
+          i{
+            font-family: 'OpenSans-Light';
+            font-style: normal;
+            @include font-size(13px);
+            padding: 0 22px;
+            margin-left: 30px;
+            margin-top: auto;
+            margin-bottom: 21px;
+            line-height: 17px;
+            color: rgba($color: #f5f5f5, $alpha: 0.5);
+            border-left: 1px solid rgba($color: #f5f5f5, $alpha: 0.5);
+            @include animate(.4s, ease-out);
+          }
+        }
+      }
 
-    .nav--smartphone{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba($color: #000000, $alpha: 0.9);
-      transform: translateX(100%);
-      z-index: 100;
-      @include animate(.2s, linear);
-      display: none;
-      .nav--smartphone__menu{
+      .row__main-nav{
+        @media screen and (max-width: 50rem){
+          display: none;
+        }
+        height: 100%;
+        .navbar-nav{
+          border: 0px;
+          height: 100%;
+          margin-right: 15px;
+          li{
+            height: 100%;
+            a{
+              border-top: 1px solid transparent;
+
+              @media screen and (min-width: 50rem) {
+                padding-top: 34px !important;
+                padding-bottom: auto !important;
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-left: 35px;
+              }
+
+              @include font-size(13px);
+              &:hover, &:focus{
+                background-color: transparent;
+                border-top: 1px solid #32B0EE;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .row__main-nav--smartphone{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba($color: #000000, $alpha: 0.9);
+        transform: translateX(100%);
+        z-index: 100;
+        @include animate(.2s, linear);
+        display: none;
+        @media screen and (min-width: 40rem){
+          display: none;
+        }
         .navbar-nav{
           text-align: center;
           margin: 3rem auto;
+          width: 100%;
           li{
             padding: 1rem 0rem;
+            width: 100%;
             a{
               @include font-size(30px);
               font-weight: 500;
@@ -40,9 +118,7 @@ header{
           }
         }
       }
-    }
 
-    .row{
       .row__button--collapse{
         position: absolute;
         top: 50%;
@@ -51,55 +127,11 @@ header{
         right: 0;
         display: none;
         z-index: 100000;
-        @media screen and (max-width: 60rem) {
+        @media screen and (max-width: 50rem) {
           display: block;
         }
         i{
           color: #ffffff;
-        }
-      }
-    }
-    .row__header{
-      color: #ffffff;
-      .navbar-brand{
-        padding: 0;
-        margin-left: 0px !important;
-        @include flex();
-        align-items: center;
-
-        h1{
-          font-family: 'Pacifico-Regular' ,Arial, sans-serif;
-          @include font-size(32px);
-        }
-        i{
-          font-family: 'Open Sans', sans-serif;
-          font-style: normal;
-          @include font-size(15px);
-          font-weight: 300;
-          padding: 0 20px;
-          margin-left: 20px;
-          color: rgba($color: #f5f5f5, $alpha: 0.5);
-          border-left: 1px solid rgba($color: #f5f5f5, $alpha: 0.5);
-          @include animate(.4s, ease-out);
-        }
-      }
-    }
-
-    .row__nav--right{
-      @media screen and (max-width: 60rem){
-        display: none;
-      }
-      .navbar-nav{
-        li{
-          a{
-            border-top: 1px solid transparent;
-  
-            &:hover, &:focus{
-              background-color: transparent;
-              border-top: 1px solid #32B0EE;
-              color: #fff;
-            }
-          }
         }
       }
     }
