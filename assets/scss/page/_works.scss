@@ -4,10 +4,6 @@
 
     .work__title{
         margin-bottom: 31px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column;
     }
 
     .work__content{
@@ -21,11 +17,6 @@
             max-width: 950px;
         }
         .container__button{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .container__button--filter{
                 text-align: center;
                 margin-bottom: 37px;
                 a{
@@ -37,6 +28,8 @@
                     color: #000000;
                     padding: 6px 20px;
                     margin-right: 8px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
                     &:hover{
                         color: #fff;
                         background-color: $primary-green;
@@ -45,8 +38,7 @@
                 .filter--selected{
                     color: #fff;
                     background-color: $primary-green;
-                } 
-            }
+                }
         }
     }
     
@@ -63,15 +55,15 @@
                 height: auto;
                 width: 100%;
             }     
-            @media (min-width: 35rem) and (max-width: 40rem) {
+            @media (min-width: 35rem) and (max-width: 640px) {
                 width: 50%;
             }
 
-            @media (min-width: 40rem) and (max-width: 63rem) {
+            @media (min-width: 40rem) and (max-width: 960px) {
                 width: 33.33%;
             }
 
-            @media (min-width: 60rem) {
+            @media (min-width: 960px) {
                 width: 25%;
             }
 
@@ -88,10 +80,6 @@
                 @include animate(.4s, ease-out);
                 transform: rotateY(180deg) scale(0.5,0.5);
                 color: #fff;
-
-                @media (max-width: 60rem) {
-                    display: none;
-                }
 
                 a{
                     border: 1px solid #ffffff;
@@ -147,10 +135,13 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 35%;
+            width: 90%;
             height: auto;
             border: 10px solid #ffffff;
             border-radius: 2%;
+            @media screen and(min-width: 800px){
+                width: 35%;
+            }
             img{
                 width: 100%;
                 height: 100%;

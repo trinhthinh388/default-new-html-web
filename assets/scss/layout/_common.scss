@@ -78,13 +78,18 @@ span.color {
 }
 
 
-.section-title{
+.devider{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-flow: column;
   h2{
     color: #0eb493;
     @include font-size(28px);
     font-weight: 900;
     text-transform: uppercase;
-    font-family: 'OpenSans-ExtraBold';
+    font-family: 'OpenSans';
     font-weight: 900;
     margin-bottom: 19px;
   }

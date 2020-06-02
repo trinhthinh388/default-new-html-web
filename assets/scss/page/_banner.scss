@@ -11,7 +11,7 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @media screen and(min-width: 50rem){
+        @media screen and(min-width: 800px){
             bottom: 50px;
         }
 
@@ -31,9 +31,13 @@
     }
     .slider__slide{
         margin: 0;
+        height: 75vh;
+        @media screen and (min-width: 600px) {
+            height: auto;
+        }
         .slide__background{
             height: 100vh;
-            @media screen and (min-width: 50rem){
+            @media screen and (min-width: 800px){
                 height: 800px;
             }
             .slide__content{
@@ -43,7 +47,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 @include animate(.4s, ease-out);
-                @media screen and (min-width: 50rem){
+                @media screen and (min-width: 800px){
                     bottom: 180px;
                 }
                 h2{
@@ -53,8 +57,7 @@
                         font-family: 'OpenSans-Bold';
                         font-weight: 800;
                     }
-                    @media screen and (min-width: 50rem) {
-                        margin-bottom: 33px;
+                    @media screen and (min-width: 800px) {
                         @include font-size(62px);
                     }
                 }
@@ -62,9 +65,10 @@
                 h3{
                     @include font-size(28px);
                     font-weight: 300;
-                    margin: 6px 0 20px;  
-                    @media screen and (min-width: 50rem) {
-                        margin-bottom: 35px;
+                    margin: 0;
+                    margin-bottom: 18px;
+                    @media screen and (min-width: 800px) {
+                        margin-bottom: 18px;
                         @include font-size(48px);
                     }           
                 }
@@ -74,23 +78,24 @@
                     @include font-size(15px);
                     font-weight: 300;
 
-                    @media screen and (min-width: 50rem){
+                    @media screen and (min-width: 800px){
                         @include font-size(18px);
                     }
         
                     &::before, &::after{
-                        color: #0feb9e;
-                        content: "___";
-                        position: relative;
-                        top: -8px;
+                        display: inline-block;
+                        content: "";
+                        width: 29px;
+                        height: 1px;
+                        background: $primary-green;
                     }
         
                     &:before{
-                        right: 20px;
+                        margin-right: 32px;
                     }
         
                     &:after{
-                        left: 20px;
+                        margin-left: 32px;
                     }
                 }
             }
@@ -106,7 +111,7 @@
             align-items: center;
             right: 10px;
             bottom: 20px;
-            @media screen and (min-width: 50rem) {
+            @media screen and (min-width: 800px) {
                 right: 48px;
                 top: 50%;
                 transform: translateY(-50%);

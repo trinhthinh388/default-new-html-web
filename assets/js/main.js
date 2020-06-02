@@ -123,7 +123,7 @@ $(document).ready(function(){
     function onFilterBtnClick(){
         let filters = [".branding", ".photography", ".web", ".logo-design"];
         let dataFilter = $(this).attr("data-filter");
-        $('.container__button--filter a').removeClass("filter--selected");
+        $('.container__button a').removeClass("filter--selected");
         $(`[data-filter="${dataFilter}"]`).addClass("filter--selected");
         if(dataFilter === 'all'){
             let timeOut1, timeOut2;
@@ -156,7 +156,7 @@ $(document).ready(function(){
     }
 
     $('[data-filter="all"]').addClass('filter--selected');
-    $('.container__button--filter a').on('click', onFilterBtnClick);
+    $('.container__button a').on('click', onFilterBtnClick);
     //END
 
     //Lightbox 

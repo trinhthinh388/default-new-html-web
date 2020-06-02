@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'Montserrat-Thin';
+    font-family: 'Montserrat';
     src: url('/assets/fonts/Montserrat-Thin.eot');
     src: url('/assets/fonts/Montserrat-Thin.eot?#iefix') format('embedded-opentype'),
          url('/assets/fonts/Montserrat-Thin.svg#Montserrat-Thin') format('svg'),
          url('/assets/fonts/Montserrat-Thin.ttf') format('truetype'),
          url('/assets/fonts/Montserrat-Thin.woff') format('woff'),
          url('/assets/fonts/Montserrat-Thin.woff2') format('woff2');
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat-SemiBoldItalic';
+    font-family: 'Montserrat';
     src: url('/assets/fonts/Montserrat-SemiBoldItalic.eot');
     src: url('/assets/fonts/Montserrat-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
          url('/assets/fonts/Montserrat-SemiBoldItalic.svg#Montserrat-SemiBoldItalic') format('svg'),
@@ -19,18 +19,18 @@
          url('/assets/fonts/Montserrat-SemiBoldItalic.woff') format('woff'),
          url('/assets/fonts/Montserrat-SemiBoldItalic.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
   }
 
 @font-face {
-font-family: 'Montserrat-ExtraBold';
+font-family: 'Montserrat';
 src: url('/assets/fonts/Montserrat-ExtraBold.eot');
 src: url('/assets/fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
         url('/assets/fonts/Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg'),
         url('/assets/fonts/Montserrat-ExtraBold.ttf') format('truetype'),
         url('/assets/fonts/Montserrat-ExtraBold.woff') format('woff'),
         url('/assets/fonts/Montserrat-ExtraBold.woff2') format('woff2');
-font-weight: normal;
+font-weight: 900;
 font-style: normal;
 }
   
