@@ -68,10 +68,10 @@ header{
               border-top: 1px solid transparent;
 
               @media screen and (min-width: 600px) {
-                padding-top: 31px;
+                padding-top: 28px;
                 padding-left: 0px;
                 padding-right: 0px;
-                margin-left: 35px;
+                margin-left: 33px;
               }
 
               @include font-size(13px);

@@ -7,13 +7,17 @@
     }
 
     .work__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         p{
             font-family: 'OpenSans-Regular';
             text-align: center;
             font-size: 18px;
             font-weight: 600;
-            margin: 0 auto;
-            margin-bottom: 61px;
+            padding: 0 10px;
+            margin-bottom: 50px;
             max-width: 950px;
         }
         .container__button{
@@ -27,9 +31,7 @@
                     border-color: transparent;
                     color: #000000;
                     padding: 6px 20px;
-                    margin-right: 8px;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
+                    margin-right: 3px;
                     &:hover{
                         color: #fff;
                         background-color: $primary-green;
@@ -48,11 +50,12 @@
         .photo{
             position: relative;
             width: 100%;
+            min-height: 300px;
             float: left;
             @include animate(.4s, ease-out);
             opacity: 1;
             img{
-                height: auto;
+                min-height: 300px;
                 width: 100%;
             }     
             @media (min-width: 35rem) and (max-width: 640px) {
@@ -85,8 +88,15 @@
                     border: 1px solid #ffffff;
                     border-radius: 50%;
                     margin-top: 20%;
-                    display: inline-block;
-                    padding: .45rem .625rem;
+                    width: 40px;
+                    height: 40px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                    @media screen {
+                        margin-top: 95px;
+                    }
                     i{
                         @include font-size(20px);
                         
@@ -98,13 +108,13 @@
                 }
 
                 h4{
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 900;
-                    padding: 10px 0px;;
+                    font-family: 'OpenSans';
+                    font-weight: 700;
+                    padding: 30px 0px 5px 0px;
                 }
                 p{
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 900;
+                    font-family: 'OpenSans';
+                    font-weight: 600;
                 }
             }
 

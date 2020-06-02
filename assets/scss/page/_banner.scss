@@ -9,10 +9,11 @@
         display: flex;
         padding: 0px 0px;
         left: 50%;
+        bottom: 30px;
         transform: translateX(-50%);
 
         @media screen and(min-width: 800px){
-            bottom: 50px;
+            bottom: 45px;
         }
 
         li{
@@ -22,7 +23,7 @@
         a{
             color: rgba(255, 255, 255, 0.3);
             display: block;
-            margin: 0 6px;
+            margin: 0 8px;
 
             &:hover{
                 color: #ffffff;
@@ -53,8 +54,9 @@
                 h2{
                     @include font-size(42px);
                     font-weight: 300;
+                    margin-bottom: 5px;
                     span{
-                        font-family: 'OpenSans-Bold';
+                        font-family: 'OpenSans';
                         font-weight: 800;
                     }
                     @media screen and (min-width: 800px) {
@@ -66,14 +68,16 @@
                     @include font-size(28px);
                     font-weight: 300;
                     margin: 0;
-                    margin-bottom: 18px;
+                    margin-bottom: 23px;
                     @media screen and (min-width: 800px) {
-                        margin-bottom: 18px;
                         @include font-size(48px);
                     }           
                 }
         
                 p{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     color: #ffffff;
                     @include font-size(15px);
                     font-weight: 300;
@@ -121,7 +125,7 @@
                 margin: 0;
                 width: fit-content;
                 height: fit-content;
-                padding-top: 15px;
+                padding-top: 14px;
                 button{
                     width: 8px;
                     height: 8px;
