@@ -1,85 +1,164 @@
+@include font('Montserrat-ExtraBold', '../fonts/Montserrat-ExtraBold');
+
 #slider{
     padding: 0;
+    position: relative;
 
-    .carousel-indicators{
-        bottom: 10px;
-        left: inherit;
-        margin: 0;
-        right: 30px;
-        top: 49%;
-        width: 0;
+    .slider__social-links{
+        position: absolute;
+        display: flex;
+        padding: 0px 0px;
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+
+        @media screen and(min-width: 800px){
+            bottom: 45px;
+        }
 
         li{
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            height: 8px;
-            width: 8px;
+            display: inline-block;
         }
 
-        .active{
-            height: 8px;
-            width: 8px;
+        a{
+            color: rgba(255, 255, 255, 0.3);
+            display: block;
+            margin: 0 8px;
+
+            &:hover{
+                color: #ffffff;
+            }
         }
     }
-
-    .carousel-inner{
-
-        .item{
-            background-size: cover;
+    .slider__slide{
+        margin: 0;
+        height: 75vh;
+        @media screen and (min-width: 600px) {
+            height: auto;
+        }
+        .slide__background{
             height: 100vh;
-
-            .carousel-caption{
-                top: 50%;
+            @media screen and (min-width: 800px){
+                height: 800px;
+            }
+            .slide__content{
+                display: block !important;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                @include animate(.4s, ease-out);
+                @media screen and (min-width: 800px){
+                    bottom: 180px;
+                }
                 h2{
-                    font-size: 62px;
+                    @include font-size(42px);
                     font-weight: 300;
-
+                    margin-bottom: 5px;
                     span{
+                        font-family: 'OpenSans';
                         font-weight: 800;
                     }
+                    @media screen and (min-width: 800px) {
+                        @include font-size(62px);
+                    }
                 }
-
+        
                 h3{
-                    font-size: 48px;
+                    @include font-size(28px);
                     font-weight: 300;
-                    margin: 6px 0 20px;
+                    margin: 0;
+                    margin-bottom: 23px;
+                    @media screen and (min-width: 800px) {
+                        @include font-size(48px);
+                    }           
                 }
-
+        
                 p{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     color: #ffffff;
-                    font-size: 18px;
+                    @include font-size(15px);
                     font-weight: 300;
 
+                    @media screen and (min-width: 800px){
+                        @include font-size(18px);
+                    }
+        
                     &::before, &::after{
-                        color: #0feb9e;
-                        content: "___";
-                        position: relative;
-                        top: -8px;
+                        display: inline-block;
+                        content: "";
+                        width: 29px;
+                        height: 1px;
+                        background: $primary-green;
                     }
-
+        
                     &:before{
-                        right: 20px;
+                        margin-right: 32px;
                     }
-
+        
                     &:after{
-                        left: 20px;
+                        margin-left: 32px;
                     }
                 }
+            }
+        }
+        
+        .slick-dots{
+            position: absolute;
+            display: flex;
+            height: fit-content;
+            width: fit-content;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            right: 10px;
+            bottom: 20px;
+            @media screen and (min-width: 800px) {
+                right: 48px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
 
-                .social-links{
-                    margin-top: 5%;
-                    li{
-                        display: inline-block;
+            li{
+                margin: 0;
+                width: fit-content;
+                height: fit-content;
+                padding-top: 14px;
+                button{
+                    width: 8px;
+                    height: 8px;
+                    padding: 1px;
+                    border: 1px solid rgba($color: #c3c6c7, $alpha: 1);
+                    border-radius: 50%;
+                    
+                    &:before{
+                        display: none;
                     }
+                }
+            }
+            .slick-active{
+                button{
+                    background-color: #ffffff;
+                }
 
-                    a{
-                        color: rgba(255, 255, 255, 0.3);
-                        display: block;
-                        margin: 0 6px;
-
-                        &:hover{
-                            color: #ffffff;
-                        }
-                    }
+            }
+        }
+        .slick-list{
+            height: 100%;
+            .slick-track{
+                height: 100%;
+                .slick-slide{
+                    display: block;
+                    float: left;
+                    text-align: center;
+                    background-size: cover;
+                    @include flex();
+                    justify-content: center;
+                    align-items: center;
+                    color: #ffffff;
+                    position: relative;
                 }
             }
         }

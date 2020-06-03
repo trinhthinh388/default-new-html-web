@@ -1,33 +1,144 @@
+@include font('Pacifico-Regular', '../fonts/Pacifico');
+
 header{
   background-color: rgba(16, 22, 54, 0.2);
-  border: 0 none;
+  border: 0px solid transparent !important;
   margin: 0;
-  
-    -webkit-transition: background-color 800ms linear;
-       -moz-transition: background-color 800ms linear;
-	    -ms-transition: background-color 800ms linear;
-         -o-transition: background-color 800ms linear;
-      transition: background-color 800ms linear;
-      
-
-  .container{
-    .navbar-header{
+  @include animate(.4s, linear);
+  @media screen and (min-width: 600px){
+    height: 70px;
+  }
+  .header__container{
+    height: 100%;
+    .container__row{
       color: #ffffff;
-    }
-  
-    .navbar-brand{
-      padding: 0;
-    }
-    .navbar-nav{
-      li{
-        a{
-          border-top: 1px solid transparent;
-
-          &:hover, &:focus{
-            background-color: transparent;
-            border-top: 1px solid #32B0EE;
-            color: #fff;
+      height: 100%;
+      .row__brand{
+        height: 100%;
+        float: left;
+        margin-right: 15px;
+        .navbar-brand{
+          padding: 0;
+          height: 100%;
+          @include flex();
+          align-items: center;
+          position: absolute;
+          margin-left: 0px;
+          @media screen and (min-width: 600px) {
+            margin-left: 15px;
           }
+          h1{
+            font-family: 'Pacifico-Regular';
+            @include font-size(30.5px);
+            @media screen and (min-width: 600px){
+              margin-bottom: 19px;
+              margin-top: auto;
+            }
+          }
+          i{
+            font-family: 'OpenSans';
+            font-style: normal;
+            font-weight: 100;
+            @include font-size(13px);
+            padding: 0 22px;
+            margin-left: 30px;
+            margin-top: auto;
+            margin-bottom: 21px;
+            line-height: 17px;
+            color: rgba($color: #f5f5f5, $alpha: 0.5);
+            border-left: 1px solid rgba($color: #32B0EE, $alpha: 0.5);
+            @include animate(.4s, ease-out);
+          }
+        }
+      }
+
+      .row__main-nav{
+        @media screen and (max-width: 800px){
+          display: none;
+        }
+        height: 100%;
+        margin-right: 0;
+        .navbar-nav{
+          border: 0px;
+          height: 100%;
+          margin-right: 15px;
+          li{
+            height: 100%;
+            a{
+              border-top: 1px solid transparent;
+
+              @media screen and (min-width: 600px) {
+                padding-top: 28px;
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-left: 33px;
+              }
+
+              @include font-size(13px);
+              &:hover, &:focus{
+                background-color: transparent;
+                border-top: 1px solid #32B0EE;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .row__main-nav--smartphone{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba($color: #000000, $alpha: 0.9);
+        transform: translateX(100%);
+        z-index: 100;
+        @include animate(.2s, linear);
+        display: none;
+        @media screen and (min-width: 800px){
+          display: none;
+        }
+        .navbar-nav{
+          text-align: center;
+          margin: 3rem auto;
+          width: 100%;
+          li{
+            padding: 1rem 0rem;
+            width: 100%;
+            a{
+              @include font-size(30px);
+              font-weight: 500;
+              background: transparent;
+              &:focus{
+                color: $primary-green;
+                background-color: transparent;
+              }
+              &:focus{
+                color: $primary-green;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+
+      .row__button--collapse{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+        right: 0;
+        display: none;
+        z-index: 100000;
+        background-color: transparent;
+        border-color: transparent;
+        outline: none;
+        @media screen and (max-width: 800px) {
+          display: block;
+        }
+        i{
+          color: #ffffff;
         }
       }
     }

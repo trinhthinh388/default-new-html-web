@@ -1,0 +1,161 @@
+#work{
+    position: relative;
+    padding-top: 92px;
+
+    .work__title{
+        margin-bottom: 31px;
+    }
+
+    .work__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: 'OpenSans-Regular';
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 0 10px;
+            margin-bottom: 50px;
+            max-width: 950px;
+        }
+        .container__button{
+                text-align: center;
+                margin-bottom: 37px;
+                a{
+                    @include font-size(16px);
+                    font-family: 'OpenSans-Bold';
+                    font-weight: 700;
+                    background-color: transparent;
+                    border-color: transparent;
+                    color: #000000;
+                    padding: 6px 20px;
+                    margin-right: 3px;
+                    &:hover{
+                        color: #fff;
+                        background-color: $primary-green;
+                    }
+                }
+                .filter--selected{
+                    color: #fff;
+                    background-color: $primary-green;
+                }
+        }
+    }
+    
+    .container-fluid{
+        margin: 0;
+        padding: 0;
+        .photo{
+            position: relative;
+            width: 100%;
+            min-height: 300px;
+            float: left;
+            @include animate(.4s, ease-out);
+            opacity: 1;
+            img{
+                min-height: 300px;
+                width: 100%;
+            }     
+            @media (min-width: 35rem) and (max-width: 640px) {
+                width: 50%;
+            }
+
+            @media (min-width: 40rem) and (max-width: 960px) {
+                width: 33.33%;
+            }
+
+            @media (min-width: 960px) {
+                width: 25%;
+            }
+
+            figcaption{
+                text-align: center;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                opacity: 1;
+                background-color: $primary-green;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                @include animate(.4s, ease-out);
+                transform: rotateY(180deg) scale(0.5,0.5);
+                color: #fff;
+
+                a{
+                    border: 1px solid #ffffff;
+                    border-radius: 50%;
+                    margin-top: 20%;
+                    width: 40px;
+                    height: 40px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                    @media screen {
+                        margin-top: 95px;
+                    }
+                    i{
+                        @include font-size(20px);
+                        
+                    }
+
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+
+                h4{
+                    font-family: 'OpenSans';
+                    font-weight: 700;
+                    padding: 30px 0px 5px 0px;
+                }
+                p{
+                    font-family: 'OpenSans';
+                    font-weight: 600;
+                }
+            }
+
+            &:hover{
+
+                figcaption{ 
+                    opacity: 1;
+                    transform: rotateY(0deg) scale(1,1);
+                }
+            }
+        }
+    }
+
+    .work__lightbox{
+        z-index: 999;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        display: none;
+        opacity: 0;
+        @include animate(.4s, ease-out);
+        .lightbox__content{
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: auto;
+            border: 10px solid #ffffff;
+            border-radius: 2%;
+            @media screen and(min-width: 800px){
+                width: 35%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
