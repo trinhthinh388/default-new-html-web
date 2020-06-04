@@ -5,9 +5,13 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if($(window).scrollTop() > 400){
             $("#navigation").css("background-color", "#0EB493");
+            $("#navigation .navbar-brand i").css("color", "#ffffff");
+            $("#navigation .navbar-brand i").css("border-color", "#000000");
         }
         else{
             $("#navigation").css("background-color", "rgba(16, 22, 54, 0.2)");
+            $("#navigation .navbar-brand i").css("color", "rgba(245, 245, 245, 0.5)");
+            $("#navigation .navbar-brand i").css("border-color", "rgba(50,176,238, 0.5)");
         }
         if($('.work__lightbox').css('display') == 'none')
             return;

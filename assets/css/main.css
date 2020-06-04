@@ -8125,7 +8125,7 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #feature .container__slider .row__service {
-  padding: 20px 15px 0px 31px;
+  padding: 20px 15px 0px 30px;
   margin-bottom: 30px;
 }
 
@@ -8279,6 +8279,8 @@ header .header__container .container__row .row__button--collapse i {
 #work .container-fluid .photo img {
   min-height: 300px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 35rem) and (max-width: 640px) {
@@ -8437,6 +8439,8 @@ header .header__container .container__row .row__button--collapse i {
 #teams .container__slider--team .slider__person .person__image img {
   height: 300px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #teams .container__slider--team .slider__person .person__image figcaption {
