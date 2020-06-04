@@ -7512,6 +7512,14 @@ readers do not read off random characters that represent icons */
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'OpenSans';
+  src: url("/assets/fonts/OpenSans-SemiBold.eot");
+  src: url("/assets/fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/OpenSans-SemiBold.svg#OpenSans-Regular") format("svg"), url("/assets/fonts/OpenSans-SemiBold.ttf") format("truetype"), url("/assets/fonts/OpenSans-SemiBold.woff") format("woff"), url("/assets/fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
 html, body {
   font-size: 16px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -7543,10 +7551,6 @@ body {
   font-size: 13px;
   font-size: 0.8125rem;
   color: #6a737b;
-}
-
-body > section {
-  padding: 70px 0;
 }
 
 ol, ul {
@@ -8200,7 +8204,18 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #work .work__title {
-  margin-bottom: 31px;
+  margin-bottom: 33px;
+}
+
+#work p {
+  font-family: 'OpenSans';
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 950px;
 }
 
 #work .work__content {
@@ -8219,16 +8234,6 @@ header .header__container .container__row .row__button--collapse i {
           align-items: center;
 }
 
-#work .work__content p {
-  font-family: 'OpenSans-Regular';
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0 10px;
-  margin-bottom: 50px;
-  max-width: 950px;
-}
-
 #work .work__content .container__button {
   text-align: center;
   margin-bottom: 37px;
@@ -8237,7 +8242,7 @@ header .header__container .container__row .row__button--collapse i {
 #work .work__content .container__button a {
   font-size: 16px;
   font-size: 1rem;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
   font-weight: 700;
   background-color: transparent;
   border-color: transparent;
@@ -8300,7 +8305,7 @@ header .header__container .container__row .row__button--collapse i {
   height: 100%;
   width: 100%;
   opacity: 1;
-  background-color: #0eb493;
+  background-color: rgba(14, 180, 147, 0.8);
   top: 0;
   left: 0;
   opacity: 0;
@@ -8397,6 +8402,202 @@ header .header__container .container__row .row__button--collapse i {
 #work .work__lightbox .lightbox__content img {
   width: 100%;
   height: 100%;
+}
+
+#teams {
+  padding-top: 92px;
+  padding-bottom: 91px;
+}
+
+#teams p {
+  font-family: 'OpenSans';
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  max-width: 950px;
+}
+
+@media screen and (min-width: 768px) {
+  #teams p {
+    margin-bottom: 110px;
+  }
+}
+
+#teams .team__title {
+  margin-bottom: 33px;
+}
+
+#teams .container__slider--team .slider__person .person__image {
+  position: relative;
+}
+
+#teams .container__slider--team .slider__person .person__image img {
+  height: 300px;
+  width: 100%;
+}
+
+#teams .container__slider--team .slider__person .person__image figcaption {
+  text-align: center;
+  position: absolute;
+  padding: 20px 20px 0px 20px;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background-color: rgba(14, 180, 147, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+          transform: rotateY(180deg) scale(0.5, 0.5);
+  color: #fff;
+}
+
+#teams .container__slider--team .slider__person .person__image figcaption h6 {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  #teams .container__slider--team .slider__person .person__image figcaption h6 {
+    font-size: 16px;
+    font-size: 1rem;
+    margin-top: 0;
+  }
+}
+
+#teams .container__slider--team .slider__person .person__image figcaption p {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  #teams .container__slider--team .slider__person .person__image figcaption p {
+    padding-bottom: 65px;
+  }
+}
+
+#teams .container__slider--team .slider__person .person__image figcaption nav {
+  width: 100%;
+  position: absolute;
+  bottom: 23px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#teams .container__slider--team .slider__person .person__image figcaption nav a {
+  width: 37px;
+  height: 37px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(10, 126, 103, 0.8);
+}
+
+#teams .container__slider--team .slider__person .person__image figcaption nav a i {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  #teams .container__slider--team .slider__person .person__image figcaption nav a {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+#teams .container__slider--team .slider__person .person__image:hover figcaption {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+          transform: rotateY(0deg) scale(1, 1);
+}
+
+#teams .container__slider--team .slider__person .person__desc {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#teams .container__slider--team .slider__person .person__desc h4 {
+  font-family: 'OpenSans';
+  font-weight: 600;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #212529;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+#teams .container__slider--team .slider__person .person__desc p {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-size: 'OpenSans';
+  font-weight: 400;
+  color: #73828d;
+  padding-top: 9px;
+  margin: 0;
+}
+
+#teams .container__slider--team .slider__person .person__desc:hover h4 {
+  color: #0eb493;
+}
+
+#teams .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: unset;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  #teams .slick-dots {
+    padding-top: 85px;
+  }
+}
+
+#teams .slick-dots li {
+  height: 8px;
+  width: 8px;
+  padding: 0;
+  margin: 0 7px;
+}
+
+#teams .slick-dots li button {
+  width: 8px;
+  height: 8px;
+  padding: 3px;
+  border: 1px solid #c3c6c7;
+  border-radius: 50%;
+}
+
+#teams .slick-dots li button::before {
+  display: none;
 }
 
 .current {

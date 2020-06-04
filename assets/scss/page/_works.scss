@@ -3,7 +3,18 @@
     padding-top: 92px;
 
     .work__title{
-        margin-bottom: 31px;
+        margin-bottom: 33px;
+    }
+
+    p{
+        font-family: 'OpenSans';
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 0 10px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        max-width: 950px;
     }
 
     .work__content{
@@ -11,21 +22,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p{
-            font-family: 'OpenSans-Regular';
-            text-align: center;
-            font-size: 18px;
-            font-weight: 600;
-            padding: 0 10px;
-            margin-bottom: 50px;
-            max-width: 950px;
-        }
         .container__button{
                 text-align: center;
                 margin-bottom: 37px;
                 a{
                     @include font-size(16px);
-                    font-family: 'OpenSans-Bold';
+                    font-family: 'OpenSans';
                     font-weight: 700;
                     background-color: transparent;
                     border-color: transparent;
@@ -76,7 +78,7 @@
                 height: 100%;
                 width: 100%;
                 opacity: 1;
-                background-color: $primary-green;
+                background-color: rgba($color: $primary-green, $alpha: 0.8);
                 top: 0;
                 left: 0;
                 opacity: 0;
