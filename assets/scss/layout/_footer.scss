@@ -1,0 +1,161 @@
+#footer-navigation{
+    background-color: $primary-green;
+    padding-top: 100px;
+    padding-bottom: 125px;
+    p{
+        color: #ffffff;
+    }
+    h6{
+        color: #D7D5D0;
+        @include font-size(14px);
+        font-weight: 700;
+        margin-bottom: 50px;
+        @media screen and (max-width: 768px){
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+    .footer__container{
+        .container__row{
+            .row__content{
+                @media screen and (max-width: 768px){
+                    text-align: center;
+                }
+
+                @media screen and (min-width: 768px) and (max-width: 1200px){
+                    width: 49%;
+                    float: left;
+                }
+                h1{
+                    font-family: 'Pacifico';
+                    @include font-size(30.5px);
+                    color: #ffffff;
+                    margin-bottom: 35px;
+                }
+                p{
+                    @media screen and (max-width: 768px){
+                        text-align: center;
+                    }
+                    color: #ffffff;
+                }
+            }
+
+            .row__subscribe{
+                padding-top: 8px;
+                @media screen and (max-width: 768px){
+                    text-align: center;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1200px){
+                    width: 49%;
+                    float: left;
+                }
+                form{
+                    margin-bottom: 17px;
+                    height: 42px;
+                    border: 2px solid #ffffff;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        background-color: transparent;
+                        outline: none;
+                    }
+                    button{
+                        border: none;
+                        background-color: transparent;
+                        height: 100%;
+                        outline: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @include animate(.4s, ease-out);
+                        color: rgba(255,255,255,0.6);
+                        padding-right: 17px;
+                        i{
+                            @include font-size(20px);
+                        }
+                        &:hover{
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+
+            .row__explore{
+                padding-top: 8px;
+                @media screen and (max-width: 768px){
+                    text-align: center;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1200px){
+                    width: 49%;
+                    float: left;
+                }
+                h6{
+                    margin-bottom: 43px;
+                    @media screen and (max-width: 768px){
+                        margin-bottom: 20px;
+                        margin-top: 10px;
+                    }
+                }
+                .explore__links{
+                    display: flex;
+                    text-align: left;
+                    @media screen and (max-width: 768px){
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .links--left{
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 41px;
+                    }
+                    .links--right{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    a{
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+
+            .row__credit{
+                padding: 70px 15px 0px 27px;
+                color: #062033;
+                @media screen and (max-width: 768px){
+                    text-align: center;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1200px){
+                    width: 49%;
+                    float: left;
+                }
+                p{
+                    position: relative;
+                    margin-bottom: 53px;
+                    &:before{
+                        position: absolute;
+                        width: 1px;
+                        height: 39px;
+                        background-color: #177e72;
+                        left: -13px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        @media screen and (min-width: 1200px){
+                            content: "";
+                        }
+                    }
+                    i{
+                        padding: 0px 14px 0px 9px;
+                    }
+                    span{
+                        color: #062033;
+                    }
+                }
+                
+            }
+        }
+    }
+}

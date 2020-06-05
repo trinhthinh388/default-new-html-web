@@ -211,5 +211,6 @@ $(document).ready(function(){
             $(this).css('display', 'none');
         }, 400);
     });
+    //END
 
 });

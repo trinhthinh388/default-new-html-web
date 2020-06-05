@@ -1,0 +1,53 @@
+#facts{
+    background-image: url("../img/parallax/city.jpg");
+    background-size: cover;
+    padding-top: 93px;
+    padding-bottom: 152px;
+    .fact__container{
+        .container__row{
+            .row__fact{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @media screen and (max-width: 1200px){
+                    width: 49%;
+                    float: left;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                .fact__icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid #6d7680;
+                    border-radius: 50%;
+                    margin-bottom: 20px;
+                    width: 130px;
+                    height: 130px;
+                    @media screen and (max-width:320px){
+                        width: 90px;
+                        height: 90px;
+                    }
+                    @media screen and (min-width:768px){
+                        margin-bottom: 35px;
+                    }
+                    i{
+                        color: #ffffff;
+                    }
+                }
+                .fact__content{
+                    color: #ffffff;
+                    text-align: center;
+                    @include font-size(18px);
+                    h2{
+                        font-weight: 600;
+                        line-height: 71px;
+                        @include font-size(60px);
+                    }
+                }
+            }
+        }
+    }
+    
+}
