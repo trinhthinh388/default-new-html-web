@@ -7474,8 +7474,8 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   font-family: 'Pacifico';
-  src: url("Pacifico.eot");
-  src: url("Pacifico.eot?#iefix") format("embedded-opentype"), url("Pacifico.svg#Pacifico") format("svg"), url("Pacifico.ttf") format("truetype"), url("Pacifico.woff") format("woff"), url("Pacifico.woff2") format("woff2");
+  src: url("../../fonts/Pacifico.eot");
+  src: url("../../fonts/Pacifico.eot?#iefix") format("embedded-opentype"), url("../../fonts/Pacifico.svg#Pacifico") format("svg"), url("../../fonts/Pacifico.ttf") format("truetype"), url("../../fonts/Pacifico.woff") format("woff"), url("../../fonts/Pacifico.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -7671,14 +7671,6 @@ span.color {
   background-color: #0eb493;
 }
 
-@font-face {
-  font-family: "Pacifico-Regular";
-  src: url("../fonts/Pacifico.eot");
-  src: url("../fonts/Pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/Pacifico.woff") format("woff"), url("../fonts/Pacifico.ttf") format("truetype"), url("../fonts/Pacifico.svg#aller") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 header {
   background-color: rgba(16, 22, 54, 0.2);
   border: 0px solid transparent !important;
@@ -7728,7 +7720,7 @@ header .header__container .container__row .row__brand .navbar-brand {
 }
 
 header .header__container .container__row .row__brand .navbar-brand h1 {
-  font-family: 'Pacifico-Regular';
+  font-family: 'Pacifico';
   font-size: 30.5px;
   font-size: 1.90625rem;
 }
@@ -7883,7 +7875,7 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #footer-navigation h6 {
-  color: #D7D5D0;
+  color: #dfefeb;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 700;
@@ -7911,7 +7903,7 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #footer-navigation .footer__container .container__row .row__content h1 {
-  font-family: 'Pacifico';
+  font-family: "Pacifico";
   font-size: 30.5px;
   font-size: 1.90625rem;
   color: #ffffff;
@@ -8108,7 +8100,8 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #footer-navigation .footer__container .container__row .row__credit p i {
-  padding: 0px 14px 0px 9px;
+  padding: 0px 10px 0px 4px;
+  color: #157562;
 }
 
 #footer-navigation .footer__container .container__row .row__credit p span {
@@ -8391,12 +8384,12 @@ header .header__container .container__row .row__button--collapse i {
 #feature .container__slider .row__service .service__desc {
   font-size: 13px;
   font-size: 0.8125rem;
-  color: #7a8993;
+  color: #4d606e;
   padding-left: 52px;
 }
 
 #feature .container__slider .row__service .service__desc h3 {
-  color: #000000;
+  color: #062033;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 600;
@@ -8459,6 +8452,7 @@ header .header__container .container__row .row__button--collapse i {
   margin: 0 auto;
   margin-bottom: 50px;
   max-width: 950px;
+  color: #5b646e;
 }
 
 #work .work__content {
@@ -8602,7 +8596,10 @@ header .header__container .container__row .row__button--collapse i {
 
 #work .container-fluid .photo figcaption p {
   font-family: 'OpenSans';
-  font-weight: 600;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 #work .container-fluid .photo:hover figcaption {
@@ -8663,6 +8660,7 @@ header .header__container .container__row .row__button--collapse i {
   margin: 0 auto;
   margin-bottom: 70px;
   max-width: 950px;
+  color: #5b646e;
 }
 
 @media screen and (min-width: 768px) {
@@ -8701,7 +8699,7 @@ header .header__container .container__row .row__button--collapse i {
   transition: all 0.4s ease-out;
   -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
           transform: rotateY(180deg) scale(0.5, 0.5);
-  color: #fff;
+  color: #ffffff;
 }
 
 #teams .container__slider--team .slider__person .person__image figcaption h6 {
@@ -8727,6 +8725,7 @@ header .header__container .container__row .row__button--collapse i {
   font-size: 16px;
   font-size: 1rem;
   margin: 0;
+  color: #ffffff;
   padding: 0;
   padding-bottom: 50px;
 }
@@ -8789,9 +8788,9 @@ header .header__container .container__row .row__button--collapse i {
   font-weight: 600;
   font-size: 18px;
   font-size: 1.125rem;
-  color: #212529;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+  color: #062033;
 }
 
 #teams .container__slider--team .slider__person .person__desc p {
@@ -8799,9 +8798,9 @@ header .header__container .container__row .row__button--collapse i {
   font-size: 0.8125rem;
   font-size: 'OpenSans';
   font-weight: 400;
-  color: #73828d;
   padding-top: 9px;
   margin: 0;
+  color: #062033;
 }
 
 #teams .container__slider--team .slider__person .person__desc:hover h4 {
@@ -8889,7 +8888,7 @@ header .header__container .container__row .row__button--collapse i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #6d7680;
+  border: 2px solid #7a7a85;
   border-radius: 50%;
   margin-bottom: 20px;
   width: 130px;
@@ -8925,6 +8924,7 @@ header .header__container .container__row .row__button--collapse i {
   line-height: 71px;
   font-size: 60px;
   font-size: 3.75rem;
+  font-family: 'OpenSans';
 }
 
 #discuss {
@@ -8941,6 +8941,7 @@ header .header__container .container__row .row__button--collapse i {
   margin: 0 auto;
   margin-bottom: 50px;
   max-width: 950px;
+  color: #5b646e;
 }
 
 @media screen and (min-width: 1200px) {
@@ -8952,7 +8953,7 @@ header .header__container .container__row .row__button--collapse i {
 #discuss .discuss__container .container__row .row__address h5 {
   font-size: 20px;
   font-size: 1.25rem;
-  color: #000000;
+  color: #062033;
   margin-bottom: 35px;
 }
 
@@ -8973,7 +8974,7 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #discuss .discuss__container .container__row .row__address address a {
-  color: #B9BEC1;
+  color: #92989e;
 }
 
 #discuss .discuss__container .container__row .row__message form label {
@@ -8988,7 +8989,7 @@ header .header__container .container__row .row__button--collapse i {
   padding-bottom: 16px;
   border: none;
   border-bottom: 1px solid #cccccc;
-  color: #adb1b6;
+  color: #bdc1c5;
   font-size: 13px;
   font-size: 0.8125rem;
 }
@@ -9092,17 +9093,18 @@ header .header__container .container__row .row__button--collapse i {
 #discuss .discuss__container .container__row .message__links a i {
   font-size: 26px;
   font-size: 1.625rem;
-  color: #B9BEC1;
+  color: #cdd2d6;
 }
 
 #discuss .discuss__container .container__row .message__links a svg {
-  fill: #B9BECD;
+  fill: #cdd2d6;
 }
 
 #map {
   width: 100%;
   height: 215px;
   background-color: grey;
+  border-bottom: 5px solid #062033;
 }
 
 .current {

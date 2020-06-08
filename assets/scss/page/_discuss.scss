@@ -10,6 +10,7 @@
         margin: 0 auto;
         margin-bottom: 50px;
         max-width: 950px;
+        color: #5b646e;
         @media screen and (min-width:1200px){
             margin-bottom: 79px;
         }
@@ -19,7 +20,7 @@
             .row__address{
                 h5{
                     @include font-size(20px);
-                    color: #000000;
+                    color: rgb(6, 32, 51);
                     margin-bottom: 35px;
                 }
                 address{
@@ -28,7 +29,7 @@
                     justify-content: center;
                     align-items: flex-start;
                     a{
-                        color: #B9BEC1;
+                        color: #92989e;
                     }
                 }
             }
@@ -38,14 +39,14 @@
                     label{
                         font-weight: 700;
                         @include font-size(24px);
-                        color: #062033;
+                        color: rgb(6, 32, 51);
                         margin-bottom: 41px;
                     }
                     input{
                         padding-bottom: 16px;
                         border: none;
                         border-bottom: 1px solid #cccccc;
-                        color: #adb1b6;
+                        color: #bdc1c5;
                         @include font-size(13px);
                     }
                     .form__input--top{
@@ -104,11 +105,11 @@
                     }
                     i{
                         @include font-size(26px);
-                        color: #B9BEC1;
+                        color: #cdd2d6;
                     }
 
                     svg{
-                        fill: #B9BECD;
+                        fill: #cdd2d6;
                     }
                 }
             }

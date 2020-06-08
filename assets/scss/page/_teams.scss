@@ -10,6 +10,7 @@
         margin: 0 auto;
         margin-bottom: 70px;
         max-width: 950px;
+        color: #5b646e;
         @media screen and (min-width: 768px) {
             margin-bottom: 110px;
         }
@@ -42,7 +43,7 @@
                     opacity: 0;
                     @include animate(.4s, ease-out);
                     transform: rotateY(180deg) scale(0.5,0.5);
-                    color: #fff;
+                    color: #ffffff;
                     h6{
                         font-family: "OpenSans";
                         font-weight: 700;
@@ -59,6 +60,7 @@
                         font-weight: 400;
                         @include font-size(16px);
                         margin: 0;
+                        color: #ffffff;
                         padding: 0;
                         padding-bottom: 50px;
                         @media screen and (min-width: 768px){
@@ -105,16 +107,16 @@
                     font-family: 'OpenSans';
                     font-weight: 600;
                     @include font-size(18px);
-                    color: #212529;
                     @include animate(.4s, ease-out);
+                    color: #062033;
                 }
                 p{
                     @include font-size(13px);
                     font-size: 'OpenSans';
                     font-weight: 400;
-                    color: #73828d;
                     padding-top: 9px;
-                    margin: 0,
+                    margin: 0;
+                    color: #062033;
                 }
 
                 &:hover{

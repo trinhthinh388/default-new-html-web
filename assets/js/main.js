@@ -212,5 +212,4 @@ $(document).ready(function(){
         }, 400);
     });
     //END
-
 });

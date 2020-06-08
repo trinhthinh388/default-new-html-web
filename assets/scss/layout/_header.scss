@@ -1,5 +1,3 @@
-@include font('Pacifico-Regular', '../fonts/Pacifico');
-
 header{
   background-color: rgba(16, 22, 54, 0.2);
   border: 0px solid transparent !important;
@@ -28,7 +26,7 @@ header{
             margin-left: 15px;
           }
           h1{
-            font-family: 'Pacifico-Regular';
+            font-family: 'Pacifico';
             @include font-size(30.5px);
             @media screen and (min-width: 600px){
               margin-bottom: 19px;

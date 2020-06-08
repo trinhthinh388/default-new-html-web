@@ -15,6 +15,7 @@
         margin: 0 auto;
         margin-bottom: 50px;
         max-width: 950px;
+        color: #5b646e;
     }
 
     .work__content{
@@ -117,7 +118,10 @@
                 }
                 p{
                     font-family: 'OpenSans';
-                    font-weight: 600;
+                    font-weight: 400;
+                    color: #ffffff;
+                    @include font-size(14px);
+
                 }
             }
 
