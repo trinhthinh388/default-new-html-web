@@ -7544,6 +7544,10 @@ html, body {
   }
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -7576,10 +7580,6 @@ iframe {
 a, a:focus, a:hover {
   text-decoration: none;
   outline: 0;
-}
-
-a:focus, a:hover {
-  color: #6CB670;
 }
 
 h1, h2, h3,
@@ -7727,7 +7727,7 @@ header .header__container .container__row .row__brand .navbar-brand h1 {
 
 @media screen and (min-width: 600px) {
   header .header__container .container__row .row__brand .navbar-brand h1 {
-    margin-bottom: 19px;
+    margin-bottom: 17px;
     margin-top: auto;
   }
 }
@@ -7768,6 +7768,7 @@ header .header__container .container__row .row__main-nav .navbar-nav {
 
 header .header__container .container__row .row__main-nav .navbar-nav li {
   height: 100%;
+  margin-left: 33px;
 }
 
 header .header__container .container__row .row__main-nav .navbar-nav li a {
@@ -7781,7 +7782,6 @@ header .header__container .container__row .row__main-nav .navbar-nav li a {
     padding-top: 28px;
     padding-left: 0px;
     padding-right: 0px;
-    margin-left: 33px;
   }
 }
 
@@ -7879,14 +7879,19 @@ header .header__container .container__row .row__button--collapse i {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #footer-navigation h6 {
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 16px;
+    margin-bottom: 42px;
   }
+}
+
+#footer-navigation .footer__container .container__row .row__content {
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -7921,7 +7926,7 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #footer-navigation .footer__container .container__row .row__subscribe {
-  padding-top: 8px;
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 768px) {
@@ -7957,6 +7962,8 @@ header .header__container .container__row .row__button--collapse i {
   border: none;
   background-color: transparent;
   outline: none;
+  color: #ffffff;
+  padding: 0px 10px;
 }
 
 #footer-navigation .footer__container .container__row .row__subscribe form button {
@@ -7989,7 +7996,7 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #footer-navigation .footer__container .container__row .row__explore {
-  padding-top: 8px;
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 768px) {
@@ -8001,12 +8008,13 @@ header .header__container .container__row .row__button--collapse i {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   #footer-navigation .footer__container .container__row .row__explore {
     width: 49%;
+    padding-top: 8px;
     float: left;
   }
 }
 
 #footer-navigation .footer__container .container__row .row__explore h6 {
-  margin-bottom: 43px;
+  margin-bottom: 36px;
 }
 
 @media screen and (max-width: 768px) {
@@ -8034,7 +8042,7 @@ header .header__container .container__row .row__button--collapse i {
   }
 }
 
-#footer-navigation .footer__container .container__row .row__explore .explore__links .links--left {
+#footer-navigation .footer__container .container__row .row__explore .explore__links .links__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8042,17 +8050,10 @@ header .header__container .container__row .row__button--collapse i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 41px;
 }
 
-#footer-navigation .footer__container .container__row .row__explore .explore__links .links--right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+#footer-navigation .footer__container .container__row .row__explore .explore__links .links__item--left {
+  margin-right: 41px;
 }
 
 #footer-navigation .footer__container .container__row .row__explore .explore__links a {
@@ -8060,13 +8061,15 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #footer-navigation .footer__container .container__row .row__credit {
-  padding: 70px 15px 0px 27px;
+  padding: 0;
   color: #062033;
+  padding: 71px 15px 0px 27px;
 }
 
 @media screen and (max-width: 768px) {
   #footer-navigation .footer__container .container__row .row__credit {
     text-align: center;
+    padding-top: 0;
   }
 }
 
@@ -8079,7 +8082,13 @@ header .header__container .container__row .row__button--collapse i {
 
 #footer-navigation .footer__container .container__row .row__credit p {
   position: relative;
-  margin-bottom: 53px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #footer-navigation .footer__container .container__row .row__credit p {
+    margin-bottom: 53px;
+  }
 }
 
 #footer-navigation .footer__container .container__row .row__credit p:before {
@@ -8141,12 +8150,12 @@ header .header__container .container__row .row__button--collapse i {
 
 #slider .slider__social-links li {
   display: inline-block;
+  margin: 0 8px;
 }
 
 #slider .slider__social-links a {
   color: rgba(255, 255, 255, 0.3);
   display: block;
-  margin: 0 8px;
 }
 
 #slider .slider__social-links a:hover {
@@ -8306,7 +8315,7 @@ header .header__container .container__row .row__button--collapse i {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding-top: 14px;
+  margin-bottom: 14px;
 }
 
 #slider .slider__slide .slick-dots li button {
@@ -8675,6 +8684,7 @@ header .header__container .container__row .row__button--collapse i {
 
 #teams .container__slider--team .slider__person .person__image {
   position: relative;
+  margin-bottom: 20px;
 }
 
 #teams .container__slider--team .slider__person .person__image img {
@@ -8780,7 +8790,6 @@ header .header__container .container__row .row__button--collapse i {
 
 #teams .container__slider--team .slider__person .person__desc {
   text-align: center;
-  margin-top: 20px;
 }
 
 #teams .container__slider--team .slider__person .person__desc h4 {
@@ -8807,6 +8816,16 @@ header .header__container .container__row .row__button--collapse i {
   color: #0eb493;
 }
 
+#teams .slick-list {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  #teams .slick-list {
+    margin-bottom: 85px;
+  }
+}
+
 #teams .slick-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8818,13 +8837,6 @@ header .header__container .container__row .row__button--collapse i {
       -ms-flex-align: center;
           align-items: center;
   position: unset;
-  padding-top: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  #teams .slick-dots {
-    padding-top: 85px;
-  }
 }
 
 #teams .slick-dots li {
@@ -8950,6 +8962,10 @@ header .header__container .container__row .row__button--collapse i {
   }
 }
 
+#discuss .discuss__container .container__row .row__address {
+  margin-bottom: 20px;
+}
+
 #discuss .discuss__container .container__row .row__address h5 {
   font-size: 20px;
   font-size: 1.25rem;
@@ -8958,6 +8974,7 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #discuss .discuss__container .container__row .row__address address {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9080,6 +9097,8 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #discuss .discuss__container .container__row .message__links a {
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
   padding: 0 20px;
 }
 
@@ -9098,6 +9117,14 @@ header .header__container .container__row .row__button--collapse i {
 
 #discuss .discuss__container .container__row .message__links a svg {
   fill: #cdd2d6;
+}
+
+#discuss .discuss__container .container__row .message__links a:hover i {
+  color: #0eb493;
+}
+
+#discuss .discuss__container .container__row .message__links a:hover svg {
+  fill: #0eb493;
 }
 
 #map {

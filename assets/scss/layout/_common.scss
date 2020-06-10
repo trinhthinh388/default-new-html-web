@@ -1,3 +1,8 @@
+*{
+  &:focus{
+    outline: none;
+  }
+}
 body {
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -35,7 +40,7 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-  color: #6CB670;
+  // color: #6CB670;
 }
 
 h1, h2, h3,

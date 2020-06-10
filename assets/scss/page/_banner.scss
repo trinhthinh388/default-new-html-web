@@ -18,12 +18,13 @@
 
         li{
             display: inline-block;
+            margin: 0 8px;
         }
 
         a{
             color: rgba(255, 255, 255, 0.3);
             display: block;
-            margin: 0 8px;
+            
 
             &:hover{
                 color: #ffffff;
@@ -125,7 +126,7 @@
                 margin: 0;
                 width: fit-content;
                 height: fit-content;
-                padding-top: 14px;
+                margin-bottom: 14px;
                 button{
                     width: 8px;
                     height: 8px;

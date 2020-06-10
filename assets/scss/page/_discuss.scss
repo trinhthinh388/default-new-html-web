@@ -18,12 +18,14 @@
     .discuss__container{
         .container__row{
             .row__address{
+                margin-bottom: 20px;
                 h5{
                     @include font-size(20px);
                     color: rgb(6, 32, 51);
                     margin-bottom: 35px;
                 }
                 address{
+                    margin: 0;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -98,6 +100,7 @@
                     flex-direction: column;
                 }
                 a{
+                    @include animate(.4s, ease-out);
                     padding: 0 20px;
                     @media screen and (min-width: 1200px){
                         padding: 0;
@@ -110,6 +113,16 @@
 
                     svg{
                         fill: #cdd2d6;
+                    }
+
+                    &:hover{
+                        i{
+                            color: $primary-green;
+                            
+                        }
+                        svg{
+                            fill: $primary-green;
+                        }
                     }
                 }
             }
