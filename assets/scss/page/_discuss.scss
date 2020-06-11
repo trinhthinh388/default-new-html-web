@@ -32,6 +32,9 @@
                     align-items: flex-start;
                     a{
                         color: #92989e;
+                        &:hover{
+                            color: $primary-green;
+                        }
                     }
                 }
             }
@@ -48,8 +51,11 @@
                         padding-bottom: 16px;
                         border: none;
                         border-bottom: 1px solid #cccccc;
-                        color: #bdc1c5;
+                        color: rgb(6, 32, 51);
                         @include font-size(13px);
+                        &:focus{
+                            border-color: $primary-green;
+                        }
                     }
                     .form__input--top{
                         margin-bottom: 38px;

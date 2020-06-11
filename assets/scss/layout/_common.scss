@@ -124,3 +124,28 @@ span.color {
   color: #fff;
   background-color: $primary-green;
 } 
+
+
+.container{
+  @media screen and (min-width: 768px){
+    width: 780px;
+  }
+  @media screen and (min-width: 992px){
+    width: 1000px;
+  }
+  @media screen and (min-width: 1200px){
+    width: 1200px;
+  }
+}
+
+.nav__btn--focus{
+  border-top:1px solid #FFC300 !important;
+}
+
+.nav__btn--focus-begin{
+  border-top:1px solid #32b0ee !important;
+}
+
+.nav__btn--focus-smartphone{
+  color: #FFC300;
+}

@@ -29,17 +29,22 @@
             &:hover{
                 color: #ffffff;
             }
+            i{
+                @media screen and (max-width: 800px) and (min-height: 800px){
+                    @include font-size(20px);
+                }
+            }
         }
     }
     .slider__slide{
         margin: 0;
         height: 75vh;
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 801px) {
             height: auto;
         }
         .slide__background{
             height: 100vh;
-            @media screen and (min-width: 800px){
+            @media screen and (min-width: 801px){
                 height: 800px;
             }
             .slide__content{
@@ -49,7 +54,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 @include animate(.4s, ease-out);
-                @media screen and (min-width: 800px){
+                @media screen and (min-width: 801px){
                     bottom: 180px;
                 }
                 h2{

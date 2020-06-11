@@ -3,7 +3,7 @@ header{
   border: 0px solid transparent !important;
   margin: 0;
   @include animate(.4s, linear);
-  @media screen and (min-width: 600px){
+  @media screen and (min-width: 800px){
     height: 70px;
   }
   .header__container{
@@ -20,15 +20,16 @@ header{
           height: 100%;
           @include flex();
           align-items: center;
+          justify-content: center;
           position: absolute;
           margin-left: 0px;
-          @media screen and (min-width: 600px) {
+          @media screen and (min-width: 801px) {
             margin-left: 15px;
           }
           h1{
             font-family: 'Pacifico';
             @include font-size(30.5px);
-            @media screen and (min-width: 600px){
+            @media screen and (min-width: 801px){
               margin-bottom: 17px;
               margin-top: auto;
             }
@@ -75,7 +76,6 @@ header{
               @include font-size(13px);
               &:hover, &:focus{
                 background-color: transparent;
-                border-top: 1px solid #32B0EE;
                 color: #fff;
               }
             }

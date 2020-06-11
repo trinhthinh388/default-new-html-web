@@ -21,15 +21,37 @@ $(document).ready(function(){
         }, 400);
     });
     //END
-
-    // Set the height of slider
-    // let sliderHeight = $(window).height();
-    // $('.slider__inner').css("height", sliderHeight);
-    // $(window).resize(function(){
-    //     'use strict',
-    //     $('.slider__inner').css("height", sliderHeight);
-    // });
-    // END
+    //Set focus nav btn
+    $(window).scroll(function(){
+        let home = $("#slider").offset().top - 50;
+        let feature = $("#feature").offset().top - 50;
+        let work = $("#work").offset().top - 50;
+        let teams = $("#teams").offset().top - 50;
+        let contact = $("#discuss").offset().top - 50;
+        $(".nav__btn").removeClass("nav__btn--focus-begin");
+        $(".nav__btn").removeClass("nav__btn--focus");
+        $(".nav__btn").removeClass("nav__btn--focus-smartphone");
+        if($(window).scrollTop() > home && $(window).scrollTop() < feature){
+            $(".row__main-nav navbar-right [href='#slider']").addClass("nav__btn--focus-begin");
+            $(".row__main-nav--smartphone [href='#slider']").addClass("nav__btn--focus-smartphone");
+        }
+        else if($(window).scrollTop() >= feature && $(window).scrollTop() < work){
+            $(".row__main-nav navbar-right [href='#feature']").addClass("nav__btn--focus");
+            $(".row__main-nav--smartphone [href='#feature']").addClass("nav__btn--focus-smartphone");
+        }
+        else if($(window).scrollTop() >= work && $(window).scrollTop() < teams){
+            $(".row__main-nav navbar-right [href='#work']").addClass("nav__btn--focus");
+            $(".row__main-nav--smartphone [href='#work']").addClass("nav__btn--focus-smartphone");
+        }
+        else if($(window).scrollTop() >= teams && $(window).scrollTop() < contact){
+            $(".row__main-nav navbar-right [href='#teams']").addClass("nav__btn--focus");
+            $(".row__main-nav--smartphone [href='#teams']").addClass("nav__btn--focus-smartphone");
+        }else if($(window).scrollTop() >= contact){
+            $(".row__main-nav navbar-right [href='#discuss']").addClass("nav__btn--focus");
+            $(".row__main-nav--smartphone [href='#discuss']").addClass("nav__btn--focus-smartphone");
+        }
+    });
+    //
 
     //Set the figure caption category
     $('#work .container-fluid .branding figcaption p').toArray()
@@ -91,7 +113,7 @@ $(document).ready(function(){
             $('.navbar-brand').css("transform", `translateX(0px)`);
         }
     }
-    let viewport = window.matchMedia("(max-width: 40rem)");
+    let viewport = window.matchMedia("(max-width: 800px)");
     translateLogo(viewport);
     viewport.addListener(translateLogo);
     //END
@@ -129,7 +151,7 @@ $(document).ready(function(){
         slidesToScroll: 2,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1201,
                 settings:{
                     slidesToShow: 3,
                     slidesToScroll: 1,
@@ -228,7 +250,7 @@ $(document).ready(function(){
         $('.row__button--collapse i').addClass('fa');
         $('.row__button--collapse i').addClass('fa-bars');
         $('html, body').animate({
-            scrollTop: $(des).offset().top,
+            scrollTop: ($(des).offset().top - 50),
         }, 1000);
     });
     //END
