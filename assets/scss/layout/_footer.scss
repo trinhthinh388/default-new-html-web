@@ -8,6 +8,7 @@
     }
     p{
         color: #ffffff;
+        line-height: 24px;
     }
     h6{
         color: rgb(223, 239, 235);
@@ -17,7 +18,7 @@
         margin-top: 10px;
         @media screen and (min-width: 768px){
             margin-top: 16px;
-            margin-bottom: 42px;
+            margin-bottom: 37px;
         }
     }
     .footer__container{
@@ -39,12 +40,14 @@
                     @include font-size(30.5px);
                     color: #ffffff;
                     margin-bottom: 35px;
+                    line-height: 24px;
                 }
                 p{
                     @media screen and (max-width: 768px){
                         text-align: center;
                     }
                     color: #ffffff;
+                    line-height: 24px;
                 }
             }
 

@@ -11,6 +11,7 @@
         margin-bottom: 50px;
         max-width: 950px;
         color: #5b646e;
+        line-height: 24px;
         @media screen and (min-width:1200px){
             margin-bottom: 79px;
         }
@@ -30,6 +31,7 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-start;
+                    line-height: 24px;
                     a{
                         color: #92989e;
                         &:hover{

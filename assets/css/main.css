@@ -7752,6 +7752,10 @@ header .header__container .container__row .row__brand .navbar-brand {
   }
 }
 
+header .header__container .container__row .row__brand .navbar-brand:hover {
+  color: #ffffff;
+}
+
 header .header__container .container__row .row__brand .navbar-brand h1 {
   font-family: 'Pacifico';
   font-size: 30.5px;
@@ -7805,6 +7809,8 @@ header .header__container .container__row .row__main-nav .navbar-nav li {
 }
 
 header .header__container .container__row .row__main-nav .navbar-nav li a {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   border-top: 1px solid transparent;
   font-size: 13px;
   font-size: 0.8125rem;
@@ -7911,6 +7917,7 @@ header .header__container .container__row .row__button--collapse i {
 
 #footer-navigation p {
   color: #ffffff;
+  line-height: 24px;
 }
 
 #footer-navigation h6 {
@@ -7925,7 +7932,7 @@ header .header__container .container__row .row__button--collapse i {
 @media screen and (min-width: 768px) {
   #footer-navigation h6 {
     margin-top: 16px;
-    margin-bottom: 42px;
+    margin-bottom: 37px;
   }
 }
 
@@ -7953,10 +7960,12 @@ header .header__container .container__row .row__button--collapse i {
   font-size: 1.90625rem;
   color: #ffffff;
   margin-bottom: 35px;
+  line-height: 24px;
 }
 
 #footer-navigation .footer__container .container__row .row__content p {
   color: #ffffff;
+  line-height: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -8454,6 +8463,10 @@ header .header__container .container__row .row__button--collapse i {
   margin-bottom: 18px;
 }
 
+#feature .container__slider .row__service .service__desc p {
+  line-height: 21px;
+}
+
 #feature .container__slider .slick-list {
   padding: 39px 0px 62px 0px;
   height: -webkit-fit-content;
@@ -8511,6 +8524,7 @@ header .header__container .container__row .row__button--collapse i {
   margin-bottom: 50px;
   max-width: 950px;
   color: #5b646e;
+  line-height: 24px;
 }
 
 #work .work__content {
@@ -8719,6 +8733,7 @@ header .header__container .container__row .row__button--collapse i {
   margin-bottom: 70px;
   max-width: 950px;
   color: #5b646e;
+  line-height: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -9003,6 +9018,7 @@ header .header__container .container__row .row__button--collapse i {
   margin-bottom: 50px;
   max-width: 950px;
   color: #5b646e;
+  line-height: 24px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -9037,6 +9053,7 @@ header .header__container .container__row .row__button--collapse i {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  line-height: 24px;
 }
 
 #discuss .discuss__container .container__row .row__address address a {

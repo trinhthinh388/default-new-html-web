@@ -30,27 +30,28 @@ $(document).ready(function(){
                       .removeClass("nav__btn--focus")
                       .removeClass("nav__btn--focus-smartphone");
         if($(window).scrollTop() > home && $(window).scrollTop() < feature){
-            console.log("home");
-            $("#slider-btn").addClass("nav__btn--focus-begin");
-            $(".row__main-nav--smartphone #slider-btn").addClass("nav__btn--focus-smartphone");
+            if($(window).scrollTop() > 400)
+            {
+                $(".row__main-nav #slider-btn").addClass("nav__btn--focus");
+            }
+            else{
+                $(".row__main-nav #slider-btn").addClass("nav__btn--focus-begin");
+                $(".row__main-nav--smartphone #slider-btn").addClass("nav__btn--focus-smartphone");
+            }
         }
         else if($(window).scrollTop() >= feature && $(window).scrollTop() < work){
-            console.log("feature");
-            $("#feature-btn").addClass("nav__btn--focus");
+            $(".row__main-nav #feature-btn").addClass("nav__btn--focus");
             $(".row__main-nav--smartphone #feature-btn").addClass("nav__btn--focus-smartphone");
         }
         else if($(window).scrollTop() >= work && $(window).scrollTop() < teams){
-            console.log("work");
-            $("#work-btn").addClass("nav__btn--focus");
+            $(".row__main-nav #work-btn").addClass("nav__btn--focus");
             $(".row__main-nav--smartphone #work-btn").addClass("nav__btn--focus-smartphone");
         }
         else if($(window).scrollTop() >= teams && $(window).scrollTop() < contact){
-            console.log("teams");
-            $("#teams-btn").addClass("nav__btn--focus");
+            $(".row__main-nav #teams-btn").addClass("nav__btn--focus");
             $(".row__main-nav--smartphone #teams-btn").addClass("nav__btn--focus-smartphone");
         }else if($(window).scrollTop() >= contact){
-            console.log("contact");
-            $("#discuss-btn").addClass("nav__btn--focus");
+            $(".row__main-nav #discuss-btn").addClass("nav__btn--focus");
             $(".row__main-nav--smartphone #discuss-btn").addClass("nav__btn--focus-smartphone");
         }
     });
