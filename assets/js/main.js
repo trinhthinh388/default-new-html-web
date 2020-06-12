@@ -5,13 +5,11 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if($(window).scrollTop() > 400){
             $("#navigation").css("background-color", "#0EB493");
-            $("#navigation .navbar-brand i").css("color", "#ffffff");
-            $("#navigation .navbar-brand i").css("border-color", "#000000");
+            $("#navigation .navbar-brand i").css("color", "#ffffff").css("border-color", "#000000");
         }
         else{
             $("#navigation").css("background-color", "rgba(16, 22, 54, 0.2)");
-            $("#navigation .navbar-brand i").css("color", "rgba(245, 245, 245, 0.5)");
-            $("#navigation .navbar-brand i").css("border-color", "rgba(50,176,238, 0.5)");
+            $("#navigation .navbar-brand i").css("color", "rgba(245, 245, 245, 0.5)").css("border-color", "rgba(50,176,238, 0.5)");
         }
         if($('.work__lightbox').css('display') == 'none')
             return;
@@ -28,30 +26,55 @@ $(document).ready(function(){
         let work = $("#work").offset().top - 50;
         let teams = $("#teams").offset().top - 50;
         let contact = $("#discuss").offset().top - 50;
-        $(".nav__btn").removeClass("nav__btn--focus-begin");
-        $(".nav__btn").removeClass("nav__btn--focus");
-        $(".nav__btn").removeClass("nav__btn--focus-smartphone");
+        $(".nav__btn").removeClass("nav__btn--focus-begin")
+                      .removeClass("nav__btn--focus")
+                      .removeClass("nav__btn--focus-smartphone");
         if($(window).scrollTop() > home && $(window).scrollTop() < feature){
-            $(".row__main-nav navbar-right [href='#slider']").addClass("nav__btn--focus-begin");
-            $(".row__main-nav--smartphone [href='#slider']").addClass("nav__btn--focus-smartphone");
+            console.log("home");
+            $("#slider-btn").addClass("nav__btn--focus-begin");
+            $(".row__main-nav--smartphone #slider-btn").addClass("nav__btn--focus-smartphone");
         }
         else if($(window).scrollTop() >= feature && $(window).scrollTop() < work){
-            $(".row__main-nav navbar-right [href='#feature']").addClass("nav__btn--focus");
-            $(".row__main-nav--smartphone [href='#feature']").addClass("nav__btn--focus-smartphone");
+            console.log("feature");
+            $("#feature-btn").addClass("nav__btn--focus");
+            $(".row__main-nav--smartphone #feature-btn").addClass("nav__btn--focus-smartphone");
         }
         else if($(window).scrollTop() >= work && $(window).scrollTop() < teams){
-            $(".row__main-nav navbar-right [href='#work']").addClass("nav__btn--focus");
-            $(".row__main-nav--smartphone [href='#work']").addClass("nav__btn--focus-smartphone");
+            console.log("work");
+            $("#work-btn").addClass("nav__btn--focus");
+            $(".row__main-nav--smartphone #work-btn").addClass("nav__btn--focus-smartphone");
         }
         else if($(window).scrollTop() >= teams && $(window).scrollTop() < contact){
-            $(".row__main-nav navbar-right [href='#teams']").addClass("nav__btn--focus");
-            $(".row__main-nav--smartphone [href='#teams']").addClass("nav__btn--focus-smartphone");
+            console.log("teams");
+            $("#teams-btn").addClass("nav__btn--focus");
+            $(".row__main-nav--smartphone #teams-btn").addClass("nav__btn--focus-smartphone");
         }else if($(window).scrollTop() >= contact){
-            $(".row__main-nav navbar-right [href='#discuss']").addClass("nav__btn--focus");
-            $(".row__main-nav--smartphone [href='#discuss']").addClass("nav__btn--focus-smartphone");
+            console.log("contact");
+            $("#discuss-btn").addClass("nav__btn--focus");
+            $(".row__main-nav--smartphone #discuss-btn").addClass("nav__btn--focus-smartphone");
         }
     });
-    //
+    //END
+
+    //Hover nav button
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 400)
+        {
+            $(".nav__btn").hover(function(){
+                $(this).css("border-top", "1px solid #FFC300");
+            }, function(){
+                $(this).css("border-top", "1px solid transparent");
+            });
+        }
+        else{
+            $(".nav__btn").hover(function(){
+                $(this).css("border-top", "1px solid #32b0ee");
+            }, function(){
+                $(this).css("border-top", "1px solid transparent");
+            });
+        }
+    })
+    //END
 
     //Set the figure caption category
     $('#work .container-fluid .branding figcaption p').toArray()
