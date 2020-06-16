@@ -121,6 +121,10 @@
 
                     svg{
                         fill: #cdd2d6;
+                        height: 21px;
+                        @media screen and (min-width: 800px){
+                            height: auto;
+                        }
                     }
 
                     &:hover{

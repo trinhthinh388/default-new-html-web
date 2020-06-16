@@ -7699,6 +7699,7 @@ span.color {
 
 .nav__btn--focus-smartphone {
   color: #FFC300;
+  border: none;
 }
 
 header {
@@ -8200,24 +8201,37 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #slider .slider__social-links li {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 8px;
 }
 
 #slider .slider__social-links a {
   color: rgba(255, 255, 255, 0.3);
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #slider .slider__social-links a:hover {
   color: #ffffff;
 }
 
-@media screen and (max-width: 800px) and (min-height: 800px) {
-  #slider .slider__social-links a i {
-    font-size: 20px;
-    font-size: 1.25rem;
-  }
+#slider .slider__social-links a i {
+  font-size: 1.33333333em;
 }
 
 #slider .slider__slide {
@@ -9191,6 +9205,13 @@ header .header__container .container__row .row__button--collapse i {
 
 #discuss .discuss__container .container__row .message__links a svg {
   fill: #cdd2d6;
+  height: 21px;
+}
+
+@media screen and (min-width: 800px) {
+  #discuss .discuss__container .container__row .message__links a svg {
+    height: auto;
+  }
 }
 
 #discuss .discuss__container .container__row .message__links a:hover i {

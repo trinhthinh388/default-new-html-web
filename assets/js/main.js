@@ -32,27 +32,27 @@ $(document).ready(function(){
         if($(window).scrollTop() > home && $(window).scrollTop() < feature){
             if($(window).scrollTop() > 400)
             {
-                $(".row__main-nav #slider-btn").addClass("nav__btn--focus");
+                $("#slider-btn").addClass("nav__btn--focus");
             }
             else{
-                $(".row__main-nav #slider-btn").addClass("nav__btn--focus-begin");
-                $(".row__main-nav--smartphone #slider-btn").addClass("nav__btn--focus-smartphone");
+                $("#slider-btn").addClass("nav__btn--focus-begin");
+                $("#slider-btn-sp").addClass("nav__btn--focus-smartphone");
             }
         }
         else if($(window).scrollTop() >= feature && $(window).scrollTop() < work){
-            $(".row__main-nav #feature-btn").addClass("nav__btn--focus");
-            $(".row__main-nav--smartphone #feature-btn").addClass("nav__btn--focus-smartphone");
+            $("#feature-btn").addClass("nav__btn--focus");
+            $("#feature-btn-sp").addClass("nav__btn--focus-smartphone");
         }
         else if($(window).scrollTop() >= work && $(window).scrollTop() < teams){
-            $(".row__main-nav #work-btn").addClass("nav__btn--focus");
-            $(".row__main-nav--smartphone #work-btn").addClass("nav__btn--focus-smartphone");
+            $("#work-btn").addClass("nav__btn--focus");
+            $("#work-btn-sp").addClass("nav__btn--focus-smartphone");
         }
         else if($(window).scrollTop() >= teams && $(window).scrollTop() < contact){
-            $(".row__main-nav #teams-btn").addClass("nav__btn--focus");
-            $(".row__main-nav--smartphone #teams-btn").addClass("nav__btn--focus-smartphone");
+            $("#teams-btn").addClass("nav__btn--focus");
+            $("#teams-btn-sp").addClass("nav__btn--focus-smartphone");
         }else if($(window).scrollTop() >= contact){
-            $(".row__main-nav #discuss-btn").addClass("nav__btn--focus");
-            $(".row__main-nav--smartphone #discuss-btn").addClass("nav__btn--focus-smartphone");
+            $("#discuss-btn").addClass("nav__btn--focus");
+            $("#discuss-btn-sp").addClass("nav__btn--focus-smartphone");
         }
     });
     //END
@@ -61,14 +61,14 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if($(window).scrollTop() > 400)
         {
-            $(".nav__btn").hover(function(){
+            $("#slider-btn, #feature-btn, #work-btn, #teams-btn, #discuss-btn").hover(function(){
                 $(this).css("border-top", "1px solid #FFC300");
             }, function(){
                 $(this).css("border-top", "1px solid transparent");
             });
         }
         else{
-            $(".nav__btn").hover(function(){
+            $("#slider-btn, #feature-btn, #work-btn, #teams-btn, #discuss-btn").hover(function(){
                 $(this).css("border-top", "1px solid #32b0ee");
             }, function(){
                 $(this).css("border-top", "1px solid transparent");
