@@ -24,6 +24,20 @@
 
     .container__slider--team{
         .slider__person{
+            &:hover{
+                .person__image{
+                    figcaption{ 
+                        opacity: 1;
+                        transform: rotateY(0deg) scale(1,1);
+                    }
+                }
+
+                .person__desc{
+                    h4{
+                        color: $primary-green;
+                    }
+                }
+            }
             .person__image{
                 position: relative;
                 margin-bottom: 20px;
@@ -93,13 +107,6 @@
                         }
                     }
                 }
-                &:hover{
-
-                    figcaption{ 
-                        opacity: 1;
-                        transform: rotateY(0deg) scale(1,1);
-                    }
-                }
             }
             
             .person__desc{
@@ -118,12 +125,6 @@
                     padding-top: 9px;
                     margin: 0;
                     color: #062033;
-                }
-
-                &:hover{
-                    h4{
-                        color: $primary-green;
-                    }
                 }
             }
         }

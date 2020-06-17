@@ -42,6 +42,10 @@
             }
 
             .row__message{
+                margin-bottom: 20px;
+                @media screen and (min-width: 800px){
+                    margin-bottom: 0px;
+                }
                 form{
                     label{
                         font-weight: 700;
@@ -108,18 +112,19 @@
                     flex-direction: column;
                 }
                 a{
-                    @include animate(.4s, ease-out);
                     padding: 0 20px;
                     @media screen and (min-width: 1200px){
                         padding: 0;
                         padding-bottom: 15px;
                     }
                     i{
+                        @include animate(.4s, ease-in);
                         @include font-size(26px);
                         color: #cdd2d6;
                     }
 
                     svg{
+                        @include animate(.4s, ease-in);
                         fill: #cdd2d6;
                         height: 21px;
                         @media screen and (min-width: 800px){

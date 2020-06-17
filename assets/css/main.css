@@ -7671,12 +7671,6 @@ span.color {
   background-color: #0eb493;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 780px;
-  }
-}
-
 @media screen and (min-width: 992px) {
   .container {
     width: 1000px;
@@ -7938,7 +7932,7 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #footer-navigation .footer__container .container__row .row__content {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -7976,7 +7970,7 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #footer-navigation .footer__container .container__row .row__subscribe {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -8047,7 +8041,7 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #footer-navigation .footer__container .container__row .row__explore {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -8572,11 +8566,18 @@ header .header__container .container__row .row__button--collapse i {
   color: #000000;
   padding: 6px 20px;
   margin-right: 3px;
+  margin: 10px;
 }
 
 #work .work__content .container__button a:hover {
   color: #fff;
   background-color: #0eb493;
+}
+
+@media screen and (min-width: 800px) {
+  #work .work__content .container__button a {
+    margin: 0;
+  }
 }
 
 #work .work__content .container__button .filter--selected {
@@ -8760,6 +8761,16 @@ header .header__container .container__row .row__button--collapse i {
   margin-bottom: 33px;
 }
 
+#teams .container__slider--team .slider__person:hover .person__image figcaption {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+          transform: rotateY(0deg) scale(1, 1);
+}
+
+#teams .container__slider--team .slider__person:hover .person__desc h4 {
+  color: #0eb493;
+}
+
 #teams .container__slider--team .slider__person .person__image {
   position: relative;
   margin-bottom: 20px;
@@ -8860,12 +8871,6 @@ header .header__container .container__row .row__button--collapse i {
   }
 }
 
-#teams .container__slider--team .slider__person .person__image:hover figcaption {
-  opacity: 1;
-  -webkit-transform: rotateY(0deg) scale(1, 1);
-          transform: rotateY(0deg) scale(1, 1);
-}
-
 #teams .container__slider--team .slider__person .person__desc {
   text-align: center;
 }
@@ -8888,10 +8893,6 @@ header .header__container .container__row .row__button--collapse i {
   padding-top: 9px;
   margin: 0;
   color: #062033;
-}
-
-#teams .container__slider--team .slider__person .person__desc:hover h4 {
-  color: #0eb493;
 }
 
 #teams .slick-list {
@@ -9078,6 +9079,16 @@ header .header__container .container__row .row__button--collapse i {
   color: #0eb493;
 }
 
+#discuss .discuss__container .container__row .row__message {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  #discuss .discuss__container .container__row .row__message {
+    margin-bottom: 0px;
+  }
+}
+
 #discuss .discuss__container .container__row .row__message form label {
   font-weight: 700;
   font-size: 24px;
@@ -9185,8 +9196,6 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #discuss .discuss__container .container__row .message__links a {
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
   padding: 0 20px;
 }
 
@@ -9198,12 +9207,16 @@ header .header__container .container__row .row__button--collapse i {
 }
 
 #discuss .discuss__container .container__row .message__links a i {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
   font-size: 26px;
   font-size: 1.625rem;
   color: #cdd2d6;
 }
 
 #discuss .discuss__container .container__row .message__links a svg {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
   fill: #cdd2d6;
   height: 21px;
 }

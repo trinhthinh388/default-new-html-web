@@ -40,6 +40,10 @@
                         color: #fff;
                         background-color: $primary-green;
                     }
+                    margin: 10px;
+                    @media screen and (min-width: 800px){
+                        margin: 0;
+                    }
                 }
                 .filter--selected{
                     color: #fff;
